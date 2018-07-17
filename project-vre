@@ -2,10 +2,10 @@ server {
   listen 80;
   listen [::]:80;
 
-  root /home/static/project-;
+  root /home/static/project-vre;
   index index.html index.htm;
 
-  server_name sandbox.vre.getmore.mx;
+  server_name sandbox.project-vre.getmore.mx;
 
   location / {
       try_files $uri $uri/ =404;
