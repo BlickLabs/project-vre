@@ -5,7 +5,7 @@ server {
   root /home/static/project-;
   index index.html index.htm;
 
-  server_name ;
+  server_name sandbox.vre.getmore.mx;
 
   location / {
       try_files $uri $uri/ =404;
