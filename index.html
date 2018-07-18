@@ -170,12 +170,28 @@
       <main>
         
 <section class="home-cover">
-  <h1 class="home-cover-title gotham-book">diseñamos, desarrollamos y vendemos<br><span class="home-cover-title-span">departamentos en el corazón de la cdmx</span></h1>
-  <div class="home-cover-scroll-container" data-aos="fade-left" data-aos-offset="500" data-aos-duration="500">
-    <div>
-      <img class="home-cover-scroll-icon" src="/img/icons/icon-arrow-down.png">
+  <div>
+    <h1 class="home-cover-title gotham-book">diseñamos, desarrollamos y vendemos<br><span class="home-cover-title-span">departamentos en el corazón de la cdmx</span></h1>
+    <div class="home-cover-scroll-container">
+      <div>
+        <img class="home-cover-scroll-icon" src="/img/icons/icon-arrow-down.png">
+      </div>
+      <span class="home-cover-scroll-text gotham-medium">desliza hacia abajo</span>
     </div>
-    <span class="home-cover-scroll-text gotham-medium">desliza hacia abajo</span>
+  </div>
+  <div>
+    <span class="home-cover-form-title gotham-medium">recibe más información</span>
+    <form>
+      <div>
+        <label for="fullname">Nombre completo</label>
+        <input type="text" name="fullname" id="fullname">
+      </div>
+      <div>
+        <label for="email">Correo electrónico</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <button class="btn orange gotham-book" type="submit">enviar</button>
+    </form>
   </div>
 </section>
 <section class="home-departments">
@@ -286,10 +302,5 @@
     <script src="js/project-vre.js"></script>
     
     
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
