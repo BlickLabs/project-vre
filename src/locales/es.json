@@ -52,6 +52,79 @@
           "info": "+51 1 55 5939 6716"
         }
       ]
+    },
+    "home": {
+      "cover": {
+        "title": "diseñamos, desarrollamos y vendemos",
+        "titleSpan": "departamentos en el corazón de la cdmx",
+        "scrollText": "desliza hacia abajo",
+        "formTitle": "recibe más información",
+        "btnText":"enviar"
+      },
+      "apartments": {
+        "titlePart1": "conoce",
+        "titlePart2": "nuestros departamentos",
+        "titlePart3": "en venta en la",
+        "titlePart4": "cdmx",
+        "btnText": "cotizar",
+        "carousel": [
+          {
+            "img": "/img/home/coyoacan1424.png",
+            "status": "preventa",
+            "suburb": "Colonia Del Valle Centro",
+            "street": "Coyoacán 1424"
+          },
+          {
+            "img": "/img/home/comercio44.png",
+            "status": "preventa",
+            "suburb": "Comercio 44",
+            "street": "Colonia Escandón"
+          },
+          {
+            "img": "/img/home/beistegui512.png",
+            "status": "preventa",
+            "suburb": "Colonia Del Valle Norte",
+            "street": "C. Beistegui 512"
+          },
+          {
+            "img": "/img/home/atlanta186.png",
+            "status": "preventa",
+            "suburb": "Colonia Noche Buena",
+            "street": "Atlanta 186"
+          },
+          {
+            "img": "/img/home/carolina149.png",
+            "status": "preventa",
+            "suburb": "Colonia Noche Buena",
+            "street": "Carolina 149"
+          },
+          {
+            "img": "/img/home/tlacotalpan146.png",
+            "status": "Entrega Inmediata",
+            "suburb": "Colonia Roma",
+            "street": "Tlacotalpan 146"
+          }
+        ]
+      },
+      "info": {
+        "panel": {
+          "titlePart1": "en vre méxico",
+          "titlePart2": "nos encargamos de todas las etapas de desarrollo",
+          "subtitle": "Gracias a esto podemos ofrecer departamentos de alta calidad, precios competitivos y atención personalizada",
+          "img": "/img/home/home-apartment.jpg",
+          "btnText": "ver todos"
+        },
+        "showroom": {
+          "titlePart1": "agenda una",
+          "titlePart2": "cita para visitar nuestro showroom",
+          "btnText": "agendar"
+        }
+      },
+      "readBlog": {
+        "img": "/img/home/home-read-blog.png",
+        "title": "conoce más sobre el mundo inmobiliario",
+        "btnText": "leer blog"
+      }
     }
   }
 }
