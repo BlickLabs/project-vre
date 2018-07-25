@@ -1,14 +1,14 @@
-<nav class="nav">
+<nav class="nav {% if section != 'index' %}nav-scroll{% endif %}">
   <div>
     <a href="index.html">
-      <div class="nav-logo-white" alt="navbar logo"></div>
+      <div class="nav-logo-white {% if section != 'index' %}nav-logo-orange{% endif %}" alt="navbar logo"></div>
     </a>
   </div>
   <div class="nav-option-container">
     {% for nav in es.nav.info %}
     <div class="nav-option-content">
       <a href="{{nav.link}}">
-        <span class="nav-option gotham-medium {% if view_name == nav.viewName %} active-section {% endif %}">{{nav.section}}</span>
+        <span class="nav-option gotham-medium {% if view_name == nav.viewName %} active-section {% endif %} {% if section != 'index' %}nav-option-gray{% endif %}">{{nav.section}}</span>
       </a>
     </div>
     {% endfor %}
@@ -16,7 +16,7 @@
   <div class="nav-icon-container">
     {% for nav in es.nav.icons %}
     <div>
-      <div class="{{nav.class}}">
+      <div class="{{nav.class}}  {% if section != 'index' %}{{nav.classAlternative}}{% endif %}">
         <div class="{{nav.classInfo}} gotham-book">{{nav.info}}</div>
       </div>
     </div>
