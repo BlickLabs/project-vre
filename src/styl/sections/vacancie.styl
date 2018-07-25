@@ -1,0 +1,122 @@
+.vacancie
+  align-items center
+  background-image url("/img/backgrounds/vacancie-bg-transparent.png"), url("/img/backgrounds/vacancie-bg-apartment.jpg")
+  background-position left, right
+  background-repeat no-repeat
+  background-size 42%, 58%
+  display flex
+  height 588px
+  margin-top 62px
+
+  &-panel
+    align-items center
+    background-image url("/img/backgrounds/vacancie-bg.jpg")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    height 439px
+    display flex
+    width 881px
+
+    &-selection
+      display flex
+      flex-direction row
+      margin-left 95px
+
+    &-info
+      display flex
+      flex-direction column
+      margin 0 auto
+
+    &-title
+      color $whiteT1
+      font-size $fs18
+      letter-spacing 3.2px
+      line-height 21px
+      text-transform uppercase
+
+  &-form
+    align-items flex-end
+    display flex
+    flex-direction column
+    margin-top 35px
+
+    &-content
+      display flex
+      flex-direction row
+
+    &-column
+      margin-bottom 14px
+
+      &:first-child
+        margin-right 130px
+
+    & .dropdown,
+    & .input-group
+      margin-bottom 28px
+
+    &-cv
+      &-container
+        margin 7px 0 29px 0
+
+        & button
+          align-items center
+          display flex
+          justify-content center
+          width 141px
+
+      &-icon
+        height 9px
+        margin-left 10px
+        width 8px
+
+#select-vacancie
+  &-title
+    margin-top 8px
+
+  &-form
+    align-items flex-end
+    display flex
+    flex-direction column
+    margin-left 120px
+    width 240px
+
+  &-dropdown
+    margin-bottom 29px
+
+@media screen and (max-width 950px)
+  .vacancie
+    background-size 20%, 80%
+
+    &-panel
+      &-selection
+        margin 0 auto
+
+@media screen and (max-width 670px)
+  .vacancie
+    background-size 0, cover
+    height 680px
+
+    &-panel
+      height auto
+      margin 0 30px
+      padding 40px 0
+      width 100%
+
+      &-selection
+        flex-direction column
+
+    &-form
+      width 240px
+
+      &-content
+        flex-direction column
+
+      &-column
+        &:first-child
+          margin-right 0
+
+  #select
+    &-vacancie
+      &-form
+        margin 30px 0 0 0

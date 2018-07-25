@@ -1,0 +1,59 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}Vacante{% endblock %}
+
+{% set view_name = "selectVacancie" %}
+
+{% block content %}
+<section class="vacancie">
+  <div class="vacancie-panel">
+    <div class="vacancie-panel-info">
+      <h1 class="vacancie-panel-title gotham-book" id="select-vacancie-title">{{es.vacancies.title}}</h1>
+      <form class="vacancie-form">
+        <div class="vacancie-form-content">
+          <div class="vacancie-form-column">
+            <div class="select-container" id="select-vacancie-dropdown">
+              <select class="select-dropdown" required>
+                <option value="" disabled selected></option>
+                <option value="1">Vacante 1</option>
+                <option value="2">Vacante 2</option>
+                <option value="3">Vacante 3</option>
+              </select>
+              <label class="select-label gotham-medium">Seleccionar vacante</label>
+            </div>
+            <div class="input-group">
+              <input class="form-control" type="name" name="name" id="name">
+              <label class="gotham-medium" for="name">Nombre</label>
+            </div>
+            <div class="input-group">
+              <input class="form-control" type="lastname" name="lastname" id="lastname">
+              <label class="gotham-medium" for="lastname">Apellidos</label>
+            </div>
+          </div>
+          <div class="vacancie-form-column">
+            <div class="vacancie-form-cv-container">
+              <a href="">
+                <button class="black btn gotham-book">cargar mi cv <img class="vacancie-form-cv-icon" src="/img/icons/icon-upload.png"></button>
+              </a>
+            </div>
+            <div class="select-container" id="select-vacancie-dropdown">
+              <select class="select-dropdown" required>
+                <option value="" disabled selected></option>
+                <option value="1">Vacante 1</option>
+                <option value="2">Vacante 2</option>
+                <option value="3">Vacante 3</option>
+              </select>
+              <label class="select-label gotham-medium">Nivel de estudios</label>
+            </div>
+            <div class="input-group">
+              <input class="form-control" type="email" name="email" id="email">
+              <label class="gotham-medium" for="email">Correo electrónico</label>
+            </div>
+          </div>
+        </div>
+        <button class="btn orange gotham-book" type="submit">enviar</button>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}
