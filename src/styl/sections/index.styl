@@ -1,0 +1,437 @@
+.home
+  &-cover
+    background-image url("/img/backgrounds/home-cover.jpg")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    display flex
+    flex-direction column
+    height 611px
+    justify-content space-between
+    padding 140px 0 45px 0
+
+    &-title
+      color $whiteT1
+      font-size $fs13
+      letter-spacing 3.4px
+      line-height 33px
+      margin 0 auto
+      max-width 530px
+      text-align center
+      text-transform uppercase
+
+      &-span
+        display block
+        font-size $fs34
+        letter-spacing 5px
+        line-height 39px
+        margin-top 10px
+
+    &-scroll
+      &-container
+        animation bounce 2s 3
+        align-items center
+        display flex
+        flex-direction column
+        margin 65px auto 0 auto
+        width 95px
+
+      &-icon
+        height 16px
+        width 4px
+
+      &-text
+        color $whiteT1
+        font-size 9px
+        letter-spacing 1.7px
+        line-height 12px
+        margin-top 10px
+        text-align center
+        text-transform uppercase
+
+    &-form
+      align-items flex-end
+      display flex
+      flex-direction row
+      margin 0 0 0 52px
+
+      & > .input-group
+        margin-right 37px
+
+      &-container
+        align-items flex-end
+        display flex
+        flex-direction row
+        justify-content center
+
+      &-title
+        color $whiteT1
+        display block
+        font-size $fs12
+        letter-spacing 3.4px
+        line-height 14px
+        width 130px
+        text-transform uppercase
+
+  &-apartments
+    background-image url("/img/backgrounds/home-apartments-bg.png")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+
+    &-intro
+      align-items center
+      display flex
+      flex-direction column
+      padding 44px 0 80px 0
+
+    &-title
+      color $blackT2
+      font-size $fs16
+      letter-spacing 2.9px
+      line-height 21px
+      margin-bottom 15px
+      text-align center
+      text-transform uppercase
+      width 433px
+
+    &-carousel
+      bottom 0
+      box-shadow 0 13px 31px 0 rgba(0, 0, 0, 0.5)
+      height 466px
+      left 0
+      margin auto
+      position absolute
+      right 0
+      top 0
+      width 844px
+
+      &-navigation
+        height 30px
+        width 16.5px
+
+      & .owl-prev,
+      & .owl-next
+        bottom 0
+        height 30px
+        margin auto 0
+        position absolute
+        top 0
+
+      & .owl-prev
+        left -90px
+
+      & .owl-next
+        right -90px
+
+      & .owl-dots
+        bottom -45px
+        left 0
+        position absolute
+        margin 0 auto
+        right 0
+        width 144px
+
+      & .owl-dot
+        background-color $grayT2 !important
+        border-radius 100px
+        height 8px
+        margin 0 8px
+        width 8px
+
+      & .owl-dot.active
+        background-color $orangeT1 !important
+
+      &-container
+        background-image url("/img/backgrounds/home-carousel-bg.png")
+        background-position bottom -68px center
+        background-repeat no-repeat
+        background-size cover
+        height 388px
+        position relative
+
+      &-img
+        height 466px
+        width 844px !important
+
+        &-container
+          height 466px
+          position relative
+
+    &-status
+      color $whiteT1
+      font-size $fs11
+      letter-spacing 1.6px
+      position absolute
+      right 50px
+      text-transform uppercase
+      top 35px
+
+    &-place
+      bottom 30px
+      left 0
+      position absolute
+      right 0
+
+    &-street,
+    &-suburb
+      line-height 31px
+      text-align center
+
+    &-street
+      color $whiteT1
+      font-size $fs18
+      letter-spacing 0.6px
+
+    &-suburb
+      color $orangeT1
+      font-size $fs12
+      letter-spacing 2.1px
+      text-transform uppercase
+
+    &-btns
+      &-container
+        display flex
+        flex-direction row
+        justify-content center
+        padding 120px 0 44px 0
+
+        & a:first-child
+          margin-right 19px
+
+  &-info
+    display flex
+    flex-direction row
+    height 470px
+
+  &-panel
+    padding-left 60px
+    width 311px
+
+    &-title
+      &-1
+        color $orangeT1
+        font-size $fs7
+        letter-spacing 1.6px
+        line-height 31px
+        text-transform uppercase
+
+      &-2
+        color $blackT2
+        font-size $fs15
+        letter-spacing 2.7px
+        line-height 19px
+        margin 14px 0
+        max-width 200px
+        text-transform uppercase
+
+    &-desc
+      color $blackT1
+      font-size $fs11
+      letter-spacing 0.7px
+      line-height 15px
+      margin-bottom 21px
+      max-width 160px
+      opacity 0.5
+
+    &-img
+      box-shadow 0 13px 31px 0 rgba(0, 0, 0, 0.5)
+      height 141px
+      margin-bottom 22px
+      position relative
+      width 343px
+      z-index 1
+
+  &-showroom
+    align-items center
+    background-image url("/img/backgrounds/home-schedule-bg.jpg")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    display flex
+    flex-direction column
+    justify-content center
+    position relative
+    width 100%
+
+    &-content
+      max-width 345px
+
+    &-title
+      color $whiteT1
+      font-size $fs24
+      letter-spacing 3.5px
+      line-height 33px
+      margin-bottom 40px
+      text-transform uppercase
+
+  &-blog
+    position relative
+
+    &-img
+      width 100%
+
+    &-content
+      left 20%
+      position absolute
+      top 100px
+
+    &-title
+      color $blackT3
+      font-size $fs28
+      letter-spacing 4.1px
+      line-height 33px
+      margin-bottom 30px
+      max-width 460px
+      text-transform uppercase
+
+@media screen and (max-width 1080px)
+  .home
+    &-apartments
+      &-carousel
+        & .owl-prev
+          left -40px
+
+        & .owl-next
+          right -40px
+
+@media screen and (max-width 970px)
+  .home
+    &-cover
+      &-form
+        margin 20px 0 0 0
+
+        &-container
+          align-items flex-start
+          flex-direction column
+          margin 0 auto
+          width 575px
+
+    &-apartments
+      &-carousel
+        background-color transparent
+        box-shadow none
+        height 100%
+        position relative
+        width 100%
+
+        & .owl-dots
+          bottom -20px
+
+        & .owl-nav
+          bottom -80px
+          display flex
+          justify-content space-between
+          left 0
+          margin 0 auto
+          position absolute
+          right 0
+          width 70px
+
+        & .owl-prev,
+        & .owl-next
+          position initial
+
+        &-container
+          background-image none
+          height auto
+
+        &-img
+          box-shadow 0 13px 31px 0 rgba(0, 0, 0, 0.5)
+          height 100%
+          width 100% !important
+
+          &-container
+            display flex
+            height auto
+            justify-content center
+            margin 0 20px 32px 20px
+
+    &-info
+      flex-direction column
+      height auto
+
+    &-panel
+      margin 0 auto
+      padding 40px 0
+      width 342px
+
+      &-title-2,
+      &-desc
+        max-width 100%
+
+    &-showroom
+      padding 40px 0
+
+@media screen and (max-width 620px)
+  .home
+    &-cover
+      padding 100px 0 40px 0
+
+      &-title
+        font-size $fs11
+        line-height 20px
+
+        &-span
+          font-size $fs16
+          line-height 26px
+
+      &-scroll
+        &-container
+          margin-top 40px
+
+      &-form
+        align-items flex-start
+        flex-direction column
+
+        &-container
+          width auto
+
+        &-title
+          margin-bottom 15px
+
+        & .input-group
+          margin-bottom 30px
+
+    &-apartments
+      &-title
+        font-size $fs12
+        padding 0 30px
+        width auto
+
+      &-status
+        right 20px
+        top 20px
+
+      &-place
+        bottom 10px
+
+    &-panel
+      width 285px
+
+      &-title
+        &-2
+          font-size $fs13
+
+      &-img
+        height 111.3px
+        width 285px
+
+    &-showroom
+      &-content
+        max-width 273px
+
+      &-title
+        font-size $fs16
+        line-height 23px
+
+    &-blog
+      &-content
+        left 0
+        margin 30px
+        top 0
+
+      &-title
+        font-size $fs16
+        line-height 23px
+        margin-bottom 20px
