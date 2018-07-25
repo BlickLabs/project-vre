@@ -32,7 +32,7 @@
     
     <link rel="stylesheet" href="css/project-vre.libs.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Change - This</title>
+    <title>Change - Selección de vacante</title>
     <link runat="server" rel="shortcut icon" href="img/favicon/" type="image/x-icon"/>
     <link runat="server" rel="icon" href="img/favicon/" type="image/ico"/>
     
@@ -60,59 +60,59 @@
   </head>
   <body>
     <div id="page">
-      <nav class="nav ">
+      <nav class="nav nav-scroll">
   <div>
     <a href="index.html">
-      <div class="nav-logo-white " alt="navbar logo"></div>
+      <div class="nav-logo-white nav-logo-orange" alt="navbar logo"></div>
     </a>
   </div>
   <div class="nav-option-container">
     
     <div class="nav-option-content">
       <a href="index.html">
-        <span class="nav-option gotham-medium  active-section  ">inicio</span>
+        <span class="nav-option gotham-medium  nav-option-gray">inicio</span>
       </a>
     </div>
     
     <div class="nav-option-content">
       <a href="desarrollos.html">
-        <span class="nav-option gotham-medium  ">desarrollos</span>
+        <span class="nav-option gotham-medium  nav-option-gray">desarrollos</span>
       </a>
     </div>
     
     <div class="nav-option-content">
       <a href="https://cotiza.vre.com.mx/">
-        <span class="nav-option gotham-medium  ">cotiza</span>
+        <span class="nav-option gotham-medium  nav-option-gray">cotiza</span>
       </a>
     </div>
     
     <div class="nav-option-content">
       <a href="visitanos.html">
-        <span class="nav-option gotham-medium  ">visitanos</span>
+        <span class="nav-option gotham-medium  nav-option-gray">visitanos</span>
       </a>
     </div>
     
     <div class="nav-option-content">
       <a href="contact.html">
-        <span class="nav-option gotham-medium  ">contacto</span>
+        <span class="nav-option gotham-medium  nav-option-gray">contacto</span>
       </a>
     </div>
     
     <div class="nav-option-content">
       <a href="https://blog.vre.com.mx/">
-        <span class="nav-option gotham-medium  ">blog</span>
+        <span class="nav-option gotham-medium  nav-option-gray">blog</span>
       </a>
     </div>
     
     <div class="nav-option-content">
       <a href="select-vacancie.html">
-        <span class="nav-option gotham-medium  ">vacantes</span>
+        <span class="nav-option gotham-medium  active-section  nav-option-gray">vacantes</span>
       </a>
     </div>
     
     <div class="nav-option-content">
       <a href="nosotros.html">
-        <span class="nav-option gotham-medium  ">nosotros</span>
+        <span class="nav-option gotham-medium  nav-option-gray">nosotros</span>
       </a>
     </div>
     
@@ -120,13 +120,13 @@
   <div class="nav-icon-container">
     
     <div>
-      <div class="nav-icon-phone  ">
+      <div class="nav-icon-phone  nav-icon-phone-gray">
         <div class="nav-icon-info gotham-book">(52) 55 84372040</div>
       </div>
     </div>
     
     <div>
-      <div class="nav-icon-whatsapp  ">
+      <div class="nav-icon-whatsapp  nav-icon-whatsapp-gray">
         <div class="nav-icon-info gotham-book">+51 1 55 5939 6716</div>
       </div>
     </div>
@@ -156,7 +156,7 @@
     <div class="hamburger-menu-body nunitosans-regular" data-attribute="">
       <div class="hamburger-text-container">
         <a href="index.html" data-attribute="">
-          <span class="hamburger-text  hamburger-active ">Inicio</span>
+          <span class="hamburger-text ">Inicio</span>
         </a>
       </div>
       <div class="hamburger-text-container">
@@ -175,137 +175,25 @@
 
       <main>
         
-<section class="home-cover">
-  <div>
-    <h1 class="home-cover-title gotham-book">diseñamos, desarrollamos y vendemos<br><span class="home-cover-title-span">departamentos en el corazón de la cdmx</span></h1>
-    <div class="home-cover-scroll-container">
-      <div>
-        <img class="home-cover-scroll-icon" src="/img/icons/icon-arrow-down.png">
+<section class="vacancie">
+  <div class="vacancie-panel">
+    <div class="vacancie-panel-selection">
+      <h1 class="vacancie-panel-title gotham-book" id="select-vacancie-title">únete al equipo</h1>
+      <div id="select-vacancie-form">
+        <div class="select-container" id="select-vacancie-dropdown">
+          <select class="select-dropdown" required>
+            <option value="" disabled selected></option>
+            <option value="1">Vacante 1</option>
+            <option value="2">Vacante 2</option>
+            <option value="3">Vacante 3</option>
+          </select>
+          <label class="select-label gotham-medium">Seleccionar vacante</label>
+        </div>
+        <a href="vacancie.html">
+          <button class="btn orange gotham-book">siguiente</button>
+        </a>
       </div>
-      <span class="home-cover-scroll-text gotham-medium">desliza hacia abajo</span>
     </div>
-  </div>
-  <div class="home-cover-form-container">
-    <span class="home-cover-form-title gotham-medium">recibe más información</span>
-    <form class="home-cover-form">
-      <div class="input-group">
-        <input class="form-control" type="text" name="fullname" id="fullname">
-        <label class="gotham-medium" for="fullname">Nombre completo</label>
-      </div>
-      <div class="input-group">
-        <input class="form-control" type="email" name="email" id="email">
-        <label class="gotham-medium" for="email">Correo electrónico</label>
-      </div>
-      <button class="btn orange gotham-book" type="submit">enviar</button>
-    </form>
-  </div>
-</section>
-
-<section class="home-apartments">
-  <section class="home-apartments-intro">
-    <h3 class="home-apartments-title gotham-book">conoce <span class="gotham-medium">nuestros departamentos</span> en venta en la <span class="gotham-medium">cdmx</span></h3>
-    <a href="">
-      <button class="btn orange gotham-book">cotizar</button>
-    </a>
-  </section>
-  <section class="home-apartments-carousel-container">
-    <div class="home-apartments-carousel owl-carousel">
-      
-      <div class="home-apartments-carousel-img-container">
-        <img class="home-apartments-carousel-img" src="/img/home/coyoacan1424.png">
-        <span class="home-apartments-status gotham-medium">preventa</span>
-        <div class="home-apartments-place">
-          <h4 class="home-apartments-street gotham-book">Coyoacán 1424</h4>
-          <h5 class="home-apartments-suburb gotham-medium">Colonia Del Valle Centro</h5>
-        </div>
-      </div>
-      
-      <div class="home-apartments-carousel-img-container">
-        <img class="home-apartments-carousel-img" src="/img/home/comercio44.png">
-        <span class="home-apartments-status gotham-medium">preventa</span>
-        <div class="home-apartments-place">
-          <h4 class="home-apartments-street gotham-book">Colonia Escandón</h4>
-          <h5 class="home-apartments-suburb gotham-medium">Comercio 44</h5>
-        </div>
-      </div>
-      
-      <div class="home-apartments-carousel-img-container">
-        <img class="home-apartments-carousel-img" src="/img/home/beistegui512.png">
-        <span class="home-apartments-status gotham-medium">preventa</span>
-        <div class="home-apartments-place">
-          <h4 class="home-apartments-street gotham-book">C. Beistegui 512</h4>
-          <h5 class="home-apartments-suburb gotham-medium">Colonia Del Valle Norte</h5>
-        </div>
-      </div>
-      
-      <div class="home-apartments-carousel-img-container">
-        <img class="home-apartments-carousel-img" src="/img/home/atlanta186.png">
-        <span class="home-apartments-status gotham-medium">preventa</span>
-        <div class="home-apartments-place">
-          <h4 class="home-apartments-street gotham-book">Atlanta 186</h4>
-          <h5 class="home-apartments-suburb gotham-medium">Colonia Noche Buena</h5>
-        </div>
-      </div>
-      
-      <div class="home-apartments-carousel-img-container">
-        <img class="home-apartments-carousel-img" src="/img/home/carolina149.png">
-        <span class="home-apartments-status gotham-medium">preventa</span>
-        <div class="home-apartments-place">
-          <h4 class="home-apartments-street gotham-book">Carolina 149</h4>
-          <h5 class="home-apartments-suburb gotham-medium">Colonia Noche Buena</h5>
-        </div>
-      </div>
-      
-      <div class="home-apartments-carousel-img-container">
-        <img class="home-apartments-carousel-img" src="/img/home/tlacotalpan146.png">
-        <span class="home-apartments-status gotham-medium">Entrega Inmediata</span>
-        <div class="home-apartments-place">
-          <h4 class="home-apartments-street gotham-book">Tlacotalpan 146</h4>
-          <h5 class="home-apartments-suburb gotham-medium">Colonia Roma</h5>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-  <div class="home-apartments-btns-container">
-    <a href="">
-      <button class="btn white gotham-book">ver todos</button>
-    </a>
-    <a href="">
-      <button class="btn orange gotham-book">cotizar</button>
-    </a>
-  </div>
-</section>
-
-<section class="home-info">
-  <div class="home-panel">
-    <div class="home-panel-content">
-      <h3 class="home-panel-title-1 gotham-medium">en vre méxico</h3>
-      <h3 class="home-panel-title-2 gotham-book">nos encargamos de todas las etapas de desarrollo</h3>
-      <p class="home-panel-desc gotham-book">Gracias a esto podemos ofrecer departamentos de alta calidad, precios competitivos y atención personalizada</p>
-      <img class="home-panel-img" src="/img/home/home-apartment.jpg">
-      <a href="">
-        <button class="btn white gotham-book">ver todos</button>
-      </a>
-    </div>
-  </div>
-  <div class="home-showroom">
-    <div class="home-showroom-content">
-      <h2 class="home-showroom-title gotham-book">agenda una<br><span>cita para visitar nuestro showroom</span></h2>
-      <a href="">
-        <button class="btn black gotham-book">agendar</button>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="home-blog">
-  <img class="home-blog-img" src="/img/home/home-read-blog.png" alt="background image read blog">
-  <div class="home-blog-content">
-    <h2 class="home-blog-title gotham-book">conoce más sobre el mundo inmobiliario</h2>
-    <a href="">
-      <button class="btn orange gotham-book">leer blog</button>
-    </a>
   </div>
 </section>
 
