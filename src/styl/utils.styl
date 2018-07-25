@@ -1,3 +1,4 @@
+// Site button styles
 .btn
   border none
   color $whiteT1
@@ -23,43 +24,40 @@
     background-color transparent
 
   &.white:before,
-  &.black:before{
-    position:absolute;
-    content:"";
-    width:100%;
-    height:100%;
-    left:0;
-    z-index:-1;
-    opacity:0;
-    transition: all 0.7s cubic-bezier(0.230, 1.000, 0.320, 1.000);
-  }
+  &.black:before
+    position absolute
+    content ""
+    width 100%
+    height 100%
+    left 0
+    z-index -1
+    opacity 0
+    transition all 0.7s cubic-bezier(0.230, 1.000, 0.320, 1.000)
 
   &.white:after,
-  &.black:after {
-    content: "";
-    position: absolute;
-    background-color: $orangeT1;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 100%;
-    z-index: -2;
-    transition: all 0.7s cubic-bezier(0.230, 1.000, 0.320, 1.000); 
-  }
+  &.black:after
+    content ""
+    position absolute
+    background-color $orangeT1
+    bottom 0
+    left 0
+    right 0
+    top 100%
+    z-index -2
+    transition all 0.7s cubic-bezier(0.230, 1.000, 0.320, 1.000)
 
   &.white:hover,
-  &.black:hover{
-    color:white;
-    border: 0px #d19b26 solid;
-  }
+  &.black:hover
+    color white
+    border 0px #d19b26 solid
+
   &.white:hover:before,
-  &.black:hover:before {
-    opacity: .8;
-  }
+  &.black:hover:before
+    opacity 0.8
+
   &.white:hover:after,
-  &.black:hover:after {
-    top: 0;
-  }
+  &.black:hover:after
+    top 0
 
   &.black
     border solid 1px $orangeT1
@@ -71,6 +69,8 @@
     color $blackT3
     transition 0.08s ease-in
 
+//Animation of the cover arrow down
+
 @keyframes bounce
   0%, 20%, 50%, 80%, 100%
     transform translateY(0)
@@ -80,6 +80,8 @@
 
   60%
     transform translateY(-15px)
+
+// Fake of the Material Inputs
 
 .input-group
   position relative
@@ -124,3 +126,49 @@
 
   &.has-value:not(:focus) + label
     color lighten(black, 60%)
+
+//Fake of the Select Option Inputs
+
+.select
+  &-container
+    position relative
+    width 240px
+
+  &-dropdown
+    appearance none
+    background-color transparent
+    background url("../img/icons/icon-dropdown.png")
+    background-position right 7.5px center
+    background-repeat no-repeat
+    background-size 5px 3px
+    border none
+    border-bottom 1px solid $whiteT1
+    color $whiteT1
+    font-size $fs12
+    height 35px
+    letter-spacing 1.1px
+    position relative
+    width 240px
+
+    &:focus
+      border-bottom 1px solid $orangeT1
+
+    & option
+      background-color $orangeT1
+
+  &-label
+    color $whiteT1
+    font-size 10px
+    left 0
+    letter-spacing 1.1px
+    pointer-events none
+    position absolute
+    top 10px
+    transition 0.3s ease all
+
+  &-dropdown:focus ~ &-label,
+  &-dropdown:valid ~ &-label
+    color $orangeT1
+    font-size $fs12
+    top -15px
+    transition 0.3s ease all
