@@ -35,6 +35,11 @@
           "viewName": "blog"
         },
         {
+          "section": "vacantes",
+          "link": "select-vacancie.html",
+          "viewName": "selectVacancie"
+        },
+        {
           "section": "nosotros",
           "link": "nosotros.html",
           "viewName": "us"
@@ -43,11 +48,13 @@
       "icons": [
         {
           "class": "nav-icon-phone",
+          "classAlternative": "nav-icon-phone-gray",
           "classInfo": "nav-icon-info",
           "info": "(52) 55 84372040"
         },
         {
           "class": "nav-icon-whatsapp",
+          "classAlternative": "nav-icon-whatsapp-gray",
           "classInfo": "nav-icon-info",
           "info": "+51 1 55 5939 6716"
         }
@@ -125,6 +132,10 @@
         "title": "conoce más sobre el mundo inmobiliario",
         "btnText": "leer blog"
       }
+    },
+    "vacancies": {
+      "title": "únete al equipo",
+      "btnText": "siguiente"
     }
   }
 }
