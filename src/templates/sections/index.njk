@@ -5,11 +5,92 @@
 {% set view_name = "homepage" %}
 
 {% block content %}
-<section class="home-cover"></section>
-<section class="home-departments">
-  <section></section>
-  <section></section>
-  <section></section>
+<section class="home-cover">
+  <div>
+    <h1 class="home-cover-title gotham-book">{{es.home.cover.title}}<br><span class="home-cover-title-span">{{es.home.cover.titleSpan}}</span></h1>
+    <div class="home-cover-scroll-container">
+      <div>
+        <img class="home-cover-scroll-icon" src="/img/icons/icon-arrow-down.png">
+      </div>
+      <span class="home-cover-scroll-text gotham-medium">{{es.home.cover.scrollText}}</span>
+    </div>
+  </div>
+  <div class="home-cover-form-container">
+    <span class="home-cover-form-title gotham-medium">{{es.home.cover.formTitle}}</span>
+    <form class="home-cover-form">
+      <div class="input-group">
+        <input class="form-control" type="text" name="fullname" id="fullname">
+        <label class="gotham-medium" for="fullname">Nombre completo</label>
+      </div>
+      <div class="input-group">
+        <input class="form-control" type="email" name="email" id="email">
+        <label class="gotham-medium" for="email">Correo electrónico</label>
+      </div>
+      <button class="btn orange gotham-book" type="submit">{{es.home.cover.btnText}}</button>
+    </form>
+  </div>
 </section>
-<section class="home-blog"></section>
+
+<section class="home-apartments">
+  <section class="home-apartments-intro">
+    <h3 class="home-apartments-title gotham-book">{{es.home.apartments.titlePart1}} <span class="gotham-medium">{{es.home.apartments.titlePart2}}</span> {{es.home.apartments.titlePart3}} <span class="gotham-medium">{{es.home.apartments.titlePart4}}</span></h3>
+    <a href="">
+      <button class="btn orange gotham-book">{{es.home.apartments.btnText}}</button>
+    </a>
+  </section>
+  <section class="home-apartments-carousel-container">
+    <div class="home-apartments-carousel owl-carousel">
+      {% for carousel in es.home.apartments.carousel %}
+      <div class="home-apartments-carousel-img-container">
+        <img class="home-apartments-carousel-img" src="{{carousel.img}}">
+        <span class="home-apartments-status gotham-medium">{{carousel.status}}</span>
+        <div class="home-apartments-place">
+          <h4 class="home-apartments-street gotham-book">{{carousel.street}}</h4>
+          <h5 class="home-apartments-suburb gotham-medium">{{carousel.suburb}}</h5>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  <div class="home-apartments-btns-container">
+    <a href="">
+      <button class="btn white gotham-book">ver todos</button>
+    </a>
+    <a href="">
+      <button class="btn orange gotham-book">cotizar</button>
+    </a>
+  </div>
+</section>
+
+<section class="home-info">
+  <div class="home-panel">
+    <div class="home-panel-content">
+      <h3 class="home-panel-title-1 gotham-medium">{{es.home.info.panel.titlePart1}}</h3>
+      <h3 class="home-panel-title-2 gotham-book">{{es.home.info.panel.titlePart2}}</h3>
+      <p class="home-panel-desc gotham-book">{{es.home.info.panel.subtitle}}</p>
+      <img class="home-panel-img" src="{{es.home.info.panel.img}}">
+      <a href="">
+        <button class="btn white gotham-book">{{es.home.info.panel.btnText}}</button>
+      </a>
+    </div>
+  </div>
+  <div class="home-showroom">
+    <div class="home-showroom-content">
+      <h2 class="home-showroom-title gotham-book">{{es.home.info.showroom.titlePart1}}<br><span>{{es.home.info.showroom.titlePart2}}</span></h2>
+      <a href="">
+        <button class="btn black gotham-book">{{es.home.info.showroom.btnText}}</button>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="home-blog">
+  <img class="home-blog-img" src="{{es.home.readBlog.img}}" alt="background image read blog">
+  <div class="home-blog-content">
+    <h2 class="home-blog-title gotham-book">{{es.home.readBlog.title}}</h2>
+    <a href="">
+      <button class="btn orange gotham-book">{{es.home.readBlog.btnText}}</button>
+    </a>
+  </div>
+</section>
 {% endblock %}
