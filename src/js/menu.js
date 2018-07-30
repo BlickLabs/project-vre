@@ -13,6 +13,7 @@ function doSomething(scroll_pos) {
       $(".nav-icon-phone").addClass('nav-icon-phone-gray');
       $(".nav-icon-whatsapp").addClass('nav-icon-whatsapp-gray');
       $(".nav-option").addClass('nav-option-gray');
+      $(".nav-hamburger-icon").addClass('nav-hamburger-icon-orange');
 
     } else {
       setNav.classList.remove('nav-scroll');
@@ -20,6 +21,7 @@ function doSomething(scroll_pos) {
       $(".nav-icon-phone").removeClass('nav-icon-phone-gray');
       $(".nav-icon-whatsapp").removeClass('nav-icon-whatsapp-gray');
       $(".nav-option").removeClass('nav-option-gray');
+      $(".nav-hamburger-icon").removeClass('nav-hamburger-icon-orange');
 
     }
   }
