@@ -62,8 +62,10 @@
     },
     "home": {
       "cover": {
-        "title": "diseñamos, desarrollamos y vendemos",
-        "titleSpan": "departamentos en el corazón de la cdmx",
+        "titlePart1": "diseñamos,",
+        "titlePart2": " desarrollamos y vendemos",
+        "titleSpanPart1": "departamentos en",
+        "titleSpanPart2": "el corazón de la cdmx",
         "scrollText": "desliza hacia abajo",
         "formTitle": "recibe más información",
         "btnText":"enviar"
@@ -119,6 +121,7 @@
           "titlePart2": "nos encargamos de todas las etapas de desarrollo",
           "subtitle": "Gracias a esto podemos ofrecer departamentos de alta calidad, precios competitivos y atención personalizada",
           "img": "/img/home/home-apartment.jpg",
+          "imgMobile": "/img/home/home-apartment-mobile.png",
           "btnText": "ver todos"
         },
         "showroom": {
@@ -128,7 +131,7 @@
         }
       },
       "readBlog": {
-        "img": "/img/home/home-read-blog.png",
+        "img": "/img/home/home-read-blog.jpg",
         "title": "conoce más sobre el mundo inmobiliario",
         "btnText": "leer blog"
       }

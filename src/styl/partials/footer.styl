@@ -1,15 +1,12 @@
 .footer
   align-items center
-  background-image url("../img/backgrounds/footer-bg.png")
-  background-position bottom right
-  background-repeat no-repeat
-  background-size contain
   bottom 0
   display flex
   height 244px
-  padding-left 80px
+  padding-left 100px
   position absolute
   width 100%
+  z-index 1
 
   &-content
     display flex
@@ -17,18 +14,18 @@
 
   &-column
     &-one
-      margin-right 100px
+      margin-right 150px
 
     &-info
       display flex
       flex-direction row
 
     &-two
-      margin-right 60px
+      margin-right 80px
 
     &-two,
     &-three
-      width 180px
+      width 216px
 
   &-logo
     height 45px
@@ -48,7 +45,7 @@
   &-label,
   &-titles
     color $blackT1
-    font-size $fs10
+    font-size $fs13
     letter-spacing 2px
     text-transform uppercase
 
@@ -65,7 +62,7 @@
     background-color $grayT3
     border none
     color $blackT1
-    font-size $fs10
+    font-size $fs12
     height 28px
     letter-spacing 0.7px
     margin-right 10px
@@ -84,19 +81,19 @@
 
     &-container
       margin-right 10px
-      min-width 13px
+      min-width 15px
 
     &.mail
       background-image url("../img/icons/icon-mail-gray.png")
-      height 8px
+      height 9px
       margin-top 8px
-      width 12px
+      width 13px
 
     &.phone
       background-image url("../img/icons/icon-phone-gray.png")
-      height 13px
+      height 14px
       margin-top 6px
-      width 13px
+      width 14px
 
     &.whatsapp
       background-image url("../img/icons/icon-whatsapp-gray.png")
@@ -106,9 +103,9 @@
 
     &.pin
       background-image url("../img/icons/icon-pin-gray.png")
-      height 13px
+      height 15px
       margin-top 5px
-      width 10px
+      width 11px
 
     &-social
       height 21px
@@ -119,7 +116,7 @@
 
   &-section
     color $blackT1
-    font-size $fs10
+    font-size $fs12
     letter-spacing 0.6px
     line-height 24px
 
@@ -145,6 +142,15 @@
       &:hover > .footer-icon-container .footer-icon.pin
         background-image url("../img/icons/icon-pin-orange.png")
 
+@media screen and (max-width 1170px)
+  .footer
+    justify-content center
+    padding-left 0
+
+    &-column
+      &-one
+        margin-right 65px
+
 @media screen and (max-width 970px)
   .footer
     height 390px
@@ -153,20 +159,48 @@
 
     &-content
       flex-wrap wrap
-      width 421px
+      width 513px
 
     &-column
       &-info
         margin-top 40px
 
-@media screen and (max-width 500px)
+@media screen and (max-width 560px)
   .footer
+    height 500px
+    align-items flex-start
+    padding-top 50px
+
+    &-content
+      justify-content center
+
+    &-section,
+    &-label,
+    &-titles
+      font-size $fs10
+
+    &-column
+      &-two,
+      &-three
+        width 178px
+
+      &-two
+        margin-right 30px
+
+@media screen and (max-width 425px)
+  .footer
+    align-items center
     height 600px
+    padding-top 0
 
     &-content
       width 201px
 
     &-column
+      &-one,
+      &-two
+        margin-right 0
+
       &-info
         flex-direction column
 

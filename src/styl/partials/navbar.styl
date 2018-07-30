@@ -88,7 +88,7 @@
         color $whiteT1
         font-size $fs13
         left -115px
-        padding 6px 0
+        padding 7px 0 4px 0
         position absolute
         text-align center
         visibility visible
@@ -139,10 +139,10 @@
     &-container
       display none
 
-@media screen and (max-width: 876px)
+@media screen and (max-width: 960px)
   .nav
     justify-content space-between
-    height 70px
+    height 54px
     padding 0 40px
 
     &:after
@@ -150,8 +150,68 @@
       right 25px
 
     &-option
+      padding 10px 0
+
       &-container
         display none
+
+      &-content
+        margin 10px 0
+
+      &-mobile
+        align-items center
+        color $whiteT1
+        display flex
+        font-size $fs9
+        letter-spacing 1.5px
+        padding 10px 0
+        text-transform uppercase
+
+        &:hover,
+        &.active-section
+          color $orangeT1
+
+        &-container
+          display flex
+          flex-direction row
+
+        &-content
+          margin-left 20px
+          position relative
+
+    &-icon
+      &-container
+        justify-content flex-end
+        padding-right 35px
+        width 100%
+
+      &-info
+        &-mobile
+          background-color $orangeT1
+          bottom -40px
+          color $whiteT1
+          font-size $fs13
+          left -115px
+          padding 7px 0 4px 0
+          position absolute
+          text-align center
+          width 140px
+          z-index 1
+          display none
+
+    &-hamburger
+      &-icon
+        background-image url("../img/icons/icon-hamburger.png")
+        background-repeat no-repeat
+        background-size cover
+        height 17px
+        width 24px
+
+        &-orange
+          background-image url("../img/icons/icon-hamburger-orange.png")
+
+  #hideHamburger
+    height 16.36px
 
   .hamburger
     background-color transparent
@@ -165,22 +225,23 @@
       position initial
 
     &-logo
-      height 20px
-      width 94px
+      height 29px
+      width 30px
 
     &-close
-      height 16px
-      width 16px
+      height 16.36px
+      width 9px
 
     &-menu
       &-container
-        background-color gray
+        background-color #3a3a3a
         display inline
         bottom 0
-        left 0
+        opacity 0.9
         overflow scroll
         padding-bottom 50px
         position fixed
+        right 0
         top 0
         -webkit-transition width 0.5s
         transition width 0.5s

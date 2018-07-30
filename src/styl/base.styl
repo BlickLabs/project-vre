@@ -24,13 +24,38 @@ body
       opacity 1
       z-index 9
 
+.footer-background
+  bottom 0
+  background-image url("../img/backgrounds/footer-bg.png")
+  background-position bottom -135px right -200px
+  background-repeat no-repeat
+  background-size contain
+  height 623px
+  position absolute
+  right 0
+  width 1020px
+
 @media screen and (max-width 970px)
   body
     margin 0px 0 390px 0
 
-@media screen and (max-width 500px)
+@media screen and (max-width 560px)
+  body
+    margin 0px 0 500px 0
+
+  .footer-background
+    background-position bottom -49px right -102px
+    height 392px
+    width 632px
+
+@media screen and (max-width 425px)
   body
     margin 0px 0 600px 0
+
+  .footer-background
+    background-position bottom -64px right -102px
+    height 339px
+    width 545px
 
 a
   &, &:focus, &:hover, &:active
@@ -99,6 +124,10 @@ textarea
 
 h1, h2, h3, h4, h5, h6, p
   margin 0
+
+input, textarea
+  border-radius 0
+  -webkit-appearance none
 
 @import 'partials/navbar'
 

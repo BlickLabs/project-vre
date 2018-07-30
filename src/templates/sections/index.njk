@@ -7,7 +7,7 @@
 {% block content %}
 <section class="home-cover">
   <div>
-    <h1 class="home-cover-title gotham-book">{{es.home.cover.title}}<br><span class="home-cover-title-span">{{es.home.cover.titleSpan}}</span></h1>
+    <h1 class="home-cover-title gotham-book">{{es.home.cover.titlePart1}}<br class="title-cover-br">{{es.home.cover.titlePart2}}<br><span class="home-cover-title-span"><span>{{es.home.cover.titleSpanPart1}}</span><br><span>{{es.home.cover.titleSpanPart2}}</span></span></h1>
     <div class="home-cover-scroll-container">
       <div>
         <img class="home-cover-scroll-icon" src="/img/icons/icon-arrow-down.png">
@@ -19,11 +19,11 @@
     <span class="home-cover-form-title gotham-medium">{{es.home.cover.formTitle}}</span>
     <form class="home-cover-form">
       <div class="input-group">
-        <input class="form-control" type="text" name="fullname" id="fullname">
+        <input class="form-control gotham-medium" type="text" name="fullname" id="fullname">
         <label class="gotham-medium" for="fullname">Nombre completo</label>
       </div>
       <div class="input-group">
-        <input class="form-control" type="email" name="email" id="email">
+        <input class="form-control gotham-medium" type="email" name="email" id="email">
         <label class="gotham-medium" for="email">Correo electrónico</label>
       </div>
       <button class="btn orange gotham-book" type="submit">{{es.home.cover.btnText}}</button>
@@ -74,6 +74,7 @@
       </a>
     </div>
   </div>
+  <img class="home-panel-img-mobile" src="{{es.home.info.panel.imgMobile}}">
   <div class="home-showroom">
     <div class="home-showroom-content">
       <h2 class="home-showroom-title gotham-book">{{es.home.info.showroom.titlePart1}}<br><span>{{es.home.info.showroom.titlePart2}}</span></h2>
