@@ -3,11 +3,12 @@
   border none
   color $whiteT1
   cursor pointer
-  font-size $fs7
+  font-size $fs9
   letter-spacing 2.5px
   height 28px
   text-align center
   text-transform uppercase
+  padding-top 2px
   position relative
   width 99px
   z-index 1
@@ -94,7 +95,7 @@
   height 35px
   font-size 16px
   border none
-  border-bottom 1px solid lighten(black, 85%)
+  border-bottom 1px solid $whiteT1
   background-color transparent
 
   &:hover
@@ -121,11 +122,11 @@
   &:focus + label,
   &.has-value + label
     top -15px
-    color $color-primary
+    color $orangeT1
     font-size 12px
 
   &.has-value:not(:focus) + label
-    color lighten(black, 60%)
+    color $orangeT1
 
 //Fake of the Select Option Inputs
 
