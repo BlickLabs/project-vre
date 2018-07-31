@@ -30,5 +30,8 @@
     {% block js_inline %}
     {% endblock %}
     <div class="footer-background"></div>
+    {% if section == 'vacancie' or section == 'select-vacancie' %}
+    <div class="vacancie-decorator"></div>
+    {% endif %}
   </body>
 </html>
