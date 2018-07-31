@@ -1,5 +1,5 @@
 <nav class="nav {% if section != 'index' %}nav-scroll{% endif %}">
-  <div>
+  <div class="if-hamburger-open">
     <a href="index.html">
       <div class="nav-logo-white {% if section != 'index' %}nav-logo-orange{% endif %}" alt="navbar logo"></div>
     </a>
@@ -15,9 +15,14 @@
   </div>
   <div class="nav-icon-container">
     {% for nav in es.nav.icons %}
-    <div>
-      <div class="{{nav.class}}  {% if section != 'index' %}{{nav.classAlternative}}{% endif %}">
+    <div class="nav-icon-content-desktop">
+      <div class="{{nav.class}} {% if section != 'index' %}{{nav.classAlternative}}{% endif %}">
         <div class="{{nav.classInfo}} gotham-book">{{nav.info}}</div>
+      </div>
+    </div>
+    <div class="nav-icon-content-mobile">
+      <div class="{{nav.class}} {% if section != 'index' %}{{nav.classAlternative}}{% endif %}">
+        <div class="{{nav.classInfoMobile}} gotham-book">{{nav.info}}</div>
       </div>
     </div>
     {% endfor %}
@@ -25,7 +30,7 @@
 
   <div data-attribute="" class="hamburger-visibility"  id="hamburgerMenu">
     <div class="nav-hamburguer" data-attribute="">
-      <div class="nav-hamburger-icon" data-attribute=""></div>
+      <div class="nav-hamburger-icon {% if section != 'index' %}nav-hamburger-icon-orange{% endif %}" data-attribute=""></div>
     </div>
   </div>
   <div class="hamburger-menu-container" id="menuContainer" data-attribute="">
@@ -35,11 +40,11 @@
           <img class="hamburger-logo" src="/img/logos/logo-vre-white.png" data-attribute="" alt="Hamburger menu logo">
         </a>
       </div>
-      <div class="nav-icon-container">
+      <div class="nav-icon-container"  data-attribute="">
         {% for nav in es.nav.icons %}
-        <div>
-          <div class="{{nav.class}}  {% if section != 'index' %}{{nav.classAlternative}}{% endif %}" data-attribute="">
-            <div class="nav-icon-info-mobile gotham-book">{{nav.info}}</div>
+        <div data-attribute="">
+          <div class="{{nav.classMobile}}" data-attribute="">
+            <div class="{{nav.classInfoMobile}} gotham-book">{{nav.info}}</div>
           </div>
         </div>
         {% endfor %}
@@ -53,7 +58,7 @@
         {% for nav in es.nav.info %}
         <div class="nav-option-content">
           <a href="{{nav.link}}" data-attribute="">
-            <span class="nav-option gotham-medium {% if view_name == nav.viewName %} active-section {% endif %} {% if section != 'index' %}nav-option-gray{% endif %}">{{nav.section}}</span>
+            <span class="nav-option-mobile gotham-medium {% if view_name == nav.viewName %} active-section {% endif %} {% if section != 'index' %}nav-option-gray{% endif %}">{{nav.section}}</span>
           </a>
         </div>
         {% endfor %}
