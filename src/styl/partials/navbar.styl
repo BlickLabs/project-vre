@@ -70,11 +70,17 @@
       flex-direction row
       height 16px
 
+    &-content
+      &-mobile
+        display none
+
     &-info
       visibility hidden
 
     &-phone,
-    &-whatsapp
+    &-whatsapp,
+    &-phone-mobile,
+    &-whatsapp-mobile
       background-repeat no-repeat
       background-size contain
       cursor pointer
@@ -107,27 +113,31 @@
           top -8px
           width 13px
 
-    &-phone
+    &-phone,
+    &-phone-mobile
       background-image url("../img/icons/icon-phone-white.png")
 
     &-phone-gray
       background-image url("../img/icons/icon-phone-orange.png")
 
     &-phone,
-    &-phone-gray
+    &-phone-gray,
+    &-phone-mobile
       margin-right 15px
 
       &:hover
         background-image url("../img/icons/icon-phone-orange.png")
 
-    &-whatsapp
+    &-whatsapp,
+    &-whatsapp-mobile
       background-image url("../img/icons/icon-whatsapp-white.png")
 
     &-whatsapp-gray
       background-image url("../img/icons/icon-whatsapp-orange.png")
 
     &-whatsapp,
-    &-whatsapp-gray
+    &-whatsapp-gray,
+    &-whatsapp-mobile
       &:hover
         background-image url("../img/icons/icon-whatsapp-orange.png")
 
@@ -185,19 +195,28 @@
         padding-right 35px
         width 100%
 
+      &-content
+        &-desktop
+          display none
+
+        &-mobile
+          display block
+
       &-info
         &-mobile
-          background-color $orangeT1
-          bottom -40px
-          color $whiteT1
-          font-size $fs13
-          left -115px
-          padding 7px 0 4px 0
-          position absolute
-          text-align center
-          width 140px
-          z-index 1
-          display none
+          &-whats,
+          &-phone
+            background-color $orangeT1
+            bottom -40px
+            color $whiteT1
+            font-size $fs13
+            left -115px
+            padding 7px 0 4px 0
+            position absolute
+            text-align center
+            width 140px
+            z-index 1
+            display none
 
     &-hamburger
       &-icon
