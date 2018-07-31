@@ -48,11 +48,15 @@ window.addEventListener('scroll', function(e) {
 function showMenu() {
   document.querySelector('#menuContainer').style.width = '85%';
   document.querySelector('#hamburgerMenu').style.display = 'none';
+  document.querySelector('.if-hamburger-open').style.display = 'none';
+  document.querySelector('.nav-icon-container').style.display = 'none';
 }
 
 function hideMenu() {
   document.querySelector('#menuContainer').style.width = '0%';
   document.querySelector('#hamburgerMenu').style.display = 'inline';
+  document.querySelector('.if-hamburger-open').style.display = 'block';
+  document.querySelector('.nav-icon-container').style.display = 'flex';
 }
 
 window.addEventListener('click', function(e) {
