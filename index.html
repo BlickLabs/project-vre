@@ -61,7 +61,7 @@
   <body>
     <div id="page">
       <nav class="nav ">
-  <div>
+  <div class="if-hamburger-open">
     <a href="index.html">
       <div class="nav-logo-white " alt="navbar logo"></div>
     </a>
@@ -119,15 +119,25 @@
   </div>
   <div class="nav-icon-container">
     
-    <div>
-      <div class="nav-icon-phone  ">
+    <div class="nav-icon-content-desktop">
+      <div class="nav-icon-phone ">
         <div class="nav-icon-info gotham-book">(52) 55 84372040</div>
       </div>
     </div>
+    <div class="nav-icon-content-mobile">
+      <div class="nav-icon-phone ">
+        <div class="nav-icon-info-mobile-phone gotham-book">(52) 55 84372040</div>
+      </div>
+    </div>
     
-    <div>
-      <div class="nav-icon-whatsapp  ">
+    <div class="nav-icon-content-desktop">
+      <div class="nav-icon-whatsapp ">
         <div class="nav-icon-info gotham-book">+51 1 55 5939 6716</div>
+      </div>
+    </div>
+    <div class="nav-icon-content-mobile">
+      <div class="nav-icon-whatsapp ">
+        <div class="nav-icon-info-mobile-whats gotham-book">+51 1 55 5939 6716</div>
       </div>
     </div>
     
@@ -145,16 +155,16 @@
           <img class="hamburger-logo" src="/img/logos/logo-vre-white.png" data-attribute="" alt="Hamburger menu logo">
         </a>
       </div>
-      <div class="nav-icon-container">
+      <div class="nav-icon-container"  data-attribute="">
         
-        <div>
-          <div class="nav-icon-phone" data-attribute="">
+        <div data-attribute="">
+          <div class="nav-icon-phone-mobile" data-attribute="">
             <div class="nav-icon-info-mobile-phone gotham-book">(52) 55 84372040</div>
           </div>
         </div>
         
-        <div>
-          <div class="nav-icon-whatsapp" data-attribute="">
+        <div data-attribute="">
+          <div class="nav-icon-whatsapp-mobile" data-attribute="">
             <div class="nav-icon-info-mobile-whats gotham-book">+51 1 55 5939 6716</div>
           </div>
         </div>
