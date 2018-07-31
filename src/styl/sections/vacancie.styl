@@ -1,12 +1,24 @@
 .vacancie
   align-items center
-  background-image url("/img/backgrounds/vacancie-bg-transparent.png"), url("/img/backgrounds/vacancie-bg-apartment.jpg")
-  background-position left, right
+  background-image url("/img/backgrounds/vacancie-bg-apartment.jpg")
+  background-position right
   background-repeat no-repeat
-  background-size 42%, 58%
+  background-size 63%
   display flex
   height 642px
-  margin-top 62px
+  margin-top 54px
+  position relative
+  z-index 1
+
+  &-decorator
+    background-image url("/img/backgrounds/vacancie-bg-transparent.png")
+    background-position left top 25px
+    background-repeat no-repeat
+    background-size 193%
+    height 100%
+    position absolute
+    top 0
+    width 42%
 
   &-panel
     align-items center
@@ -17,6 +29,7 @@
     height 439px
     display flex
     width 881px
+    z-index 1
 
     &-selection
       display flex
@@ -86,15 +99,18 @@
 
 @media screen and (max-width 950px)
   .vacancie
-    background-size 20%, 80%
+    background-size 89%
 
     &-panel
       &-selection
         margin 0 auto
 
+    &-decorator
+      background-size 320%
+
 @media screen and (max-width 670px)
   .vacancie
-    background-size 0, cover
+    background-size cover
     height 680px
 
     &-panel
