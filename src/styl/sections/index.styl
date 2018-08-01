@@ -54,15 +54,19 @@
       display flex
       flex-direction row
       margin 0 0 0 52px
+      width 100%
 
       & > .input-group
         margin-right 37px
+        width 100%
 
       &-container
         align-items flex-end
         display flex
         flex-direction row
         justify-content center
+        margin 0 auto
+        width 844px
 
       &-title
         color $whiteT1
@@ -310,6 +314,9 @@
 .title-cover-br
   display none
 
+#button-transparent
+  background-color transparent
+
 @media screen and (max-width 1080px)
   .home
     &-apartments
@@ -325,16 +332,20 @@
     &-cover
       &-form
         flex-wrap wrap
+        justify-content space-between
         margin 20px 0 0 0
-        width 518px
+        width 550px
 
         &-container
           align-items flex-start
           flex-direction column
           margin 0 auto
-          width 518px
+          width 550px
 
         &-title
+          width auto
+
+        & .input-group
           width auto
 
         & .input-group:nth-child(2)
@@ -447,7 +458,7 @@
           width 100%
 
         & button
-          margin-left 0
+          margin 0
 
     &-apartments
       &-intro
@@ -515,7 +526,7 @@
       padding 50px 0 25px 0
 
       &-content
-        max-width 273px
+        max-width 285px
 
       &-title
         font-size $fs16
@@ -528,12 +539,13 @@
         margin 30px auto 0 auto
         right 0
         top 0
-        width 215px
+        width 285px
 
       &-title
         font-size $fs16
         line-height 23px
         margin-bottom 20px
+        max-width 225px
 
   .title-cover-br
     display block

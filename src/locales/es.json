@@ -48,15 +48,21 @@
       "icons": [
         {
           "class": "nav-icon-phone",
+          "classMobile": "nav-icon-phone-mobile",
           "classAlternative": "nav-icon-phone-gray",
           "classInfo": "nav-icon-info",
-          "info": "(52) 55 84372040"
+          "info": "(52) 55 84372040",
+          "classInfoMobile": "nav-icon-info-mobile-phone",
+          "classInfoHamburger": "nav-icon-info-mobile-hamburger-phone"
         },
         {
           "class": "nav-icon-whatsapp",
+          "classMobile": "nav-icon-whatsapp-mobile",
           "classAlternative": "nav-icon-whatsapp-gray",
           "classInfo": "nav-icon-info",
-          "info": "+51 1 55 5939 6716"
+          "info": "+51 1 55 5939 6716",
+          "classInfoMobile": "nav-icon-info-mobile-whats",
+          "classInfoHamburger": "nav-icon-info-mobile-hamburger-whats"
         }
       ]
     },
