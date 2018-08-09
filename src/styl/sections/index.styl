@@ -130,6 +130,9 @@
         z-index 1
 
       &-navigation
+        background-position center
+        background-repeat no-repeat
+        background-size cover
         height 30px
         width 16.5px
 
@@ -228,7 +231,11 @@
 
   &-panel
     padding-left 60px
-    width 311px
+    width 460px
+
+    &-content
+      display flex
+      flex-direction column
 
     &-title
       &-1
@@ -244,7 +251,7 @@
         letter-spacing 2.7px
         line-height 19px
         margin 14px 0
-        max-width 205px
+        max-width 320px
         text-transform uppercase
 
     &-desc
@@ -253,15 +260,15 @@
       letter-spacing 0.7px
       line-height 15px
       margin-bottom 21px
-      max-width 190px
+      max-width 285px
       opacity 0.5
 
     &-img
       box-shadow 0 13px 31px 0 rgba(0, 0, 0, 0.5)
-      height 141px
+      height 176px
       margin-bottom 22px
       position relative
-      width 343px
+      width 450.5px
       z-index 1
 
       &-mobile
@@ -294,6 +301,9 @@
     margin-bottom -3px
     position relative
 
+    &-carousel
+      z-index -1
+
     &-img
       width 100%
 
@@ -316,6 +326,18 @@
 
 #button-transparent
   background-color transparent
+
+.arrow
+  &-left
+    background-image url("/img/icons/icon-nav-left-white.png")
+
+  &-right
+    background-image url("/img/icons/icon-nav-right-white.png")
+
+@media screen and (min-width 1270px)
+  .home
+    &-panel
+      width 1084px
 
 @media screen and (max-width 1080px)
   .home
@@ -412,6 +434,13 @@
     &-showroom
       padding 40px 0
 
+  .arrow
+    &-left
+      background-image url("/img/icons/icon-nav-left.png")
+
+    &-right
+      background-image url("/img/icons/icon-nav-right.png")
+
 @media screen and (max-width 620px)
   .home
     &-cover
@@ -419,7 +448,7 @@
       padding 100px 0 40px 0
 
       &-title
-        font-size $fs9
+        font-size $fs11
         line-height 20px
 
         &-span
@@ -440,6 +469,7 @@
         width 100%
 
         &-container
+          align-items center
           padding 0 50px
           width 100%
 

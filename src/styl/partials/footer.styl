@@ -108,8 +108,8 @@
       width 11px
 
     &-social
-      height 21px
-      width 21px
+      height 26px
+      width 26px
 
       &-container
         margin-top 10px
@@ -194,7 +194,9 @@
     padding-top 0
 
     &-content
-      width 201px
+      align-items flex-start
+      flex-direction column
+      width 310px
 
     &-column
       &-one,
@@ -208,7 +210,21 @@
         margin-top 30px
 
     &-input
+      margin 0 10px 10px 0
+
+      &-container
+        flex-wrap wrap
+
+@media screen and (max-width 360px)
+  .footer
+    &-content
+      align-items center
+      width 201px
+
+    &-input
       margin 0 0 10px 0
+      width 199px
 
       &-container
         flex-direction column
+  

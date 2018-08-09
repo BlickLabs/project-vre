@@ -4,7 +4,7 @@ homeApartmentsCarousel.owlCarousel ({
   loop: true,
   nav: true,
   dots: true,
-  navText: ['<img class="home-apartments-carousel-navigation" src="/img/icons/icon-nav-left.png" />', '<img class="home-apartments-carousel-navigation" src="/img/icons/icon-nav-right.png" />'],
+  navText: ['<div class="home-apartments-carousel-navigation arrow-left"></div>', '<div class="home-apartments-carousel-navigation arrow-right"></div>'],
   margin: 0,
   autoWidth: true,
   center: true,
