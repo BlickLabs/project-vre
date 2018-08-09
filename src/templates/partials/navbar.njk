@@ -14,18 +14,21 @@
     {% endfor %}
   </div>
   <div class="nav-icon-container">
-    {% for nav in es.nav.icons %}
     <div class="nav-icon-content-desktop">
-      <div class="{{nav.class}} {% if section != 'index' %}{{nav.classAlternative}}{% endif %}">
-        <div class="{{nav.classInfo}} gotham-book">{{nav.info}}</div>
+      <div class="nav-icon-phone {% if section != 'index' %}nav-icon-phone-gray{% endif %}">
+        <div class="nav-icon-info gotham-book">(52) 55 84372040</div>
       </div>
     </div>
     <div class="nav-icon-content-mobile">
-      <div class="{{nav.class}} {% if section != 'index' %}{{nav.classAlternative}}{% endif %}">
-        <div class="{{nav.classInfoMobile}} gotham-book">{{nav.info}}</div>
+      <div class="nav-icon-phone {% if section != 'index' %}nav-icon-phone-gray{% endif %}">
+        <div class="nav-icon-info-mobile-phone gotham-book">(52) 55 84372040</div>
       </div>
     </div>
-    {% endfor %}
+    <div>
+      <a href="https://wa.me/5115559396716">
+        <div class="nav-icon-whatsapp {% if section != 'index' %}nav-icon-whatsapp-gray{% endif %}"></div>
+      </a>
+    </div>
   </div>
 
   <div data-attribute="" class="hamburger-visibility"  id="hamburgerMenu">
@@ -41,13 +44,16 @@
         </a>
       </div>
       <div class="nav-icon-container"  data-attribute="">
-        {% for nav in es.nav.icons %}
         <div data-attribute="">
-          <div class="{{nav.classMobile}}" data-attribute="">
-            <div class="{{nav.classInfoHamburger}} gotham-book">{{nav.info}}</div>
+          <div class="nav-icon-phone-mobile" data-attribute="">
+            <div class="nav-icon-info-mobile-hamburger-phone gotham-book">(52) 55 84372040</div>
           </div>
         </div>
-        {% endfor %}
+        <div  data-attribute="">
+          <a href="https://wa.me/5115559396716"  data-attribute="">
+            <div class="nav-icon-whatsapp {% if section != 'index' %}nav-icon-whatsapp-gray{% endif %}"></div>
+          </a>
+        </div>
       </div>
       <div id="hideHamburger">
         <img class="hamburger-close" src="img/icons/icon-close-hamburger.png" alt="Close hamburger menu">
