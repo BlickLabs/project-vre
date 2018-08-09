@@ -130,6 +130,9 @@
         z-index 1
 
       &-navigation
+        background-position center
+        background-repeat no-repeat
+        background-size cover
         height 30px
         width 16.5px
 
@@ -317,6 +320,13 @@
 #button-transparent
   background-color transparent
 
+.arrow
+  &-left
+    background-image url("/img/icons/icon-nav-left-white.png")
+
+  &-right
+    background-image url("/img/icons/icon-nav-right-white.png")
+
 @media screen and (max-width 1080px)
   .home
     &-apartments
@@ -411,6 +421,13 @@
 
     &-showroom
       padding 40px 0
+
+  .arrow
+    &-left
+      background-image url("/img/icons/icon-nav-left.png")
+
+    &-right
+      background-image url("/img/icons/icon-nav-right.png")
 
 @media screen and (max-width 620px)
   .home
