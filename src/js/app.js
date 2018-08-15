@@ -19,3 +19,70 @@ $(function(){
     }
   });
 });
+
+$('#selected-vacancie').on('change',function(){
+  if( $(this).val()==="Accounting/Finance"){
+    $(".selected-accounting-finance").show();
+    $(".selected-administrative").hide();
+    $(".selected-architecture").hide();
+    $(".selected-business-development").hide();
+    $(".selected-engineering").hide();
+    $(".selected-commercial").hide();
+    $(".selected-sales").hide();
+
+  } else if ($(this).val()==="Administrative") {
+    $(".selected-administrative").show();
+    $(".selected-accounting-finance").hide();
+    $(".selected-architecture").hide();
+    $(".selected-business-development").hide();
+    $(".selected-engineering").hide();
+    $(".selected-commercial").hide();
+    $(".selected-sales").hide();
+
+  } else if ($(this).val()==="Architecture") {
+    $(".selected-architecture").show();
+    $(".selected-accounting-finance").hide();
+    $(".selected-administrative").hide();
+    $(".selected-business-development").hide();
+    $(".selected-engineering").hide();
+    $(".selected-commercial").hide();
+    $(".selected-sales").hide();
+
+  } else if ($(this).val()==="Business Development") {
+    $(".selected-business-development").show();
+    $(".selected-accounting-finance").hide();
+    $(".selected-administrative").hide();
+    $(".selected-architecture").hide();
+    $(".selected-engineering").hide();
+    $(".selected-commercial").hide();
+    $(".selected-sales").hide();
+
+  } else if ($(this).val()==="Engineering") {
+    $(".selected-engineering").show();
+    $(".selected-accounting-finance").hide();
+    $(".selected-administrative").hide();
+    $(".selected-architecture").hide();
+    $(".selected-business-development").hide();
+    $(".selected-commercial").hide();
+    $(".selected-sales").hide();
+
+  } else if ($(this).val()==="Commercial") {
+    $(".selected-commercial").show();
+    $(".selected-accounting-finance").hide();
+    $(".selected-administrative").hide();
+    $(".selected-architecture").hide();
+    $(".selected-business-development").hide();
+    $(".selected-engineering").hide();
+    $(".selected-sales").hide();
+
+  } else if ($(this).val()==="Sales") {
+    $(".selected-sales").show();
+    $(".selected-accounting-finance").hide();
+    $(".selected-administrative").hide();
+    $(".selected-architecture").hide();
+    $(".selected-business-development").hide();
+    $(".selected-engineering").hide();
+    $(".selected-commercial").hide();
+
+  }
+});

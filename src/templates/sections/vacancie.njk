@@ -13,14 +13,87 @@
         <div class="vacancie-form-content">
           <div class="vacancie-form-column">
             <div class="select-container" id="select-vacancie-dropdown">
-              <select class="select-dropdown" required>
+              <select class="select-dropdown" id="selected-vacancie" required>
                 <option value="" disabled selected></option>
-                <option value="1">Vacante 1</option>
-                <option value="2">Vacante 2</option>
-                <option value="3">Vacante 3</option>
+                <option value="Accounting/Finance">Accounting/Finance</option>
+                <option value="Administrative">Administrative</option>
+                <option value="Architecture">Architecture</option>
+                <option value="Business Development">Business Development</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Commercial">Commercial</option>
+                <option value="Sales">Sales</option>
               </select>
               <label class="select-label gotham-medium">Seleccionar vacante</label>
             </div>
+
+            <div class="select-container selected-accounting-finance" id="select-vacancie-dropdown">
+              <select class="select-dropdown" required>
+                <option value="" disabled selected></option>
+                <option value="Intern">Intern</option>
+                <option value="Analyst">Analyst</option>
+                <option value="Associate">Associate</option>
+              </select>
+              <label class="select-label gotham-medium">Accounting/Finance</label>
+            </div>
+            <div class="select-container selected-administrative" id="select-vacancie-dropdown">
+              <select class="select-dropdown" required>
+                <option value="" disabled selected></option>
+                <option value="HR">HR</option>
+                <option value="Procurement">Procurement</option>
+                <option value="Legal">Legal</option>
+              </select>
+              <label class="select-label gotham-medium">Administrative</label>
+            </div>
+            <div class="select-container selected-architecture" id="select-vacancie-dropdown">
+              <select class="select-dropdown" required>
+                <option value="" disabled selected></option>
+                <option value="Intern">Intern</option>
+                <option value="Jr Architect">Jr Architect</option>
+                <option value="Senior Architect">Senior Architect</option>
+              </select>
+              <label class="select-label gotham-medium">Architecture</label>
+            </div>
+            <div class="select-container selected-business-development" id="select-vacancie-dropdown">
+              <select class="select-dropdown" required>
+                <option value="" disabled selected></option>
+                <option value="Intern">Intern</option>
+                <option value="Analyst">Analyst</option>
+                <option value="Associate">Associate</option>
+                <option value="Institutional Relations Analyst">Institutional Relations Analyst</option>
+                <option value="Institutional Relations Associate">Institutional Relations Associate</option>
+              </select>
+              <label class="select-label gotham-medium">Business Development</label>
+            </div>
+            <div class="select-container selected-engineering" id="select-vacancie-dropdown">
+              <select class="select-dropdown" required>
+                <option value="" disabled selected></option>
+                <option value="Site Engineer">Site Engineer</option>
+                <option value="Senior Supervisor Engineer">Senior Supervisor Engineer</option>
+                <option value="Automation Engineer">Automation Engineer</option>
+                <option value="Structural Design Engineer">Structural Design Engineer</option>
+                <option value="Budgeting and Programming">Budgeting and Programming</option>
+              </select>
+              <label class="select-label gotham-medium">Engineering</label>
+            </div>
+            <div class="select-container selected-commercial" id="select-vacancie-dropdown">
+              <select class="select-dropdown" required>
+                <option value="" disabled selected></option>
+                <option value="Intern">Intern</option>
+                <option value="Analyst">Analyst</option>
+                <option value="Associate">Associate</option>
+              </select>
+              <label class="select-label gotham-medium">Commercial</label>
+            </div>
+            <div class="select-container selected-sales" id="select-vacancie-dropdown">
+              <select class="select-dropdown" required>
+                <option value="" disabled selected></option>
+                <option value="Intern">Intern</option>
+                <option value="Analyst">Analyst</option>
+                <option value="Associate">Associate</option>
+              </select>
+              <label class="select-label gotham-medium">Sales</label>
+            </div>
+
             <div class="input-group">
               <input class="form-control" type="name" name="name" id="name">
               <label class="gotham-medium" for="name">Nombre</label>
