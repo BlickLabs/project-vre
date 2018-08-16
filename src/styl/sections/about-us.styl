@@ -1,0 +1,109 @@
+.about
+  margin-top 62px
+
+  &-cover
+    background-image url("../img/backgrounds/about-cover-roof.jpg")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    height 500px
+
+    &-content
+      margin 0 auto 0 370px
+      padding-top 9.5%
+      width 49%
+
+    &-logo
+      height 76px
+      width 79px
+
+    &-title
+      color $whiteT1
+      font-size $fs20
+      letter-spacing 4.1px
+      line-height 28px
+      margin-top 25px
+
+  &-believe
+    display flex
+    flex-direction row
+    margin-top -100px
+    padding-left 160px
+
+    &-decorator
+      height 386px
+      margin-top -70px
+      width 150px
+
+    &-paragraph
+      background-color $whiteT1
+      color $blackT4
+      font-size $fs14
+      letter-spacing 0.7px
+      line-height 22px
+      padding 60px 160px 80px 70px
+
+  &-desc
+    padding-left 160px
+
+    &-cover
+      background-image url("../img/backgrounds/about-second-cover.jpg")
+      background-position center
+      background-repeat no-repeat
+      background-size cover
+      height 210px
+      position relative
+
+      &-decorator
+        bottom -25px
+        height 141px
+        position absolute
+        right 0
+        width 40px
+
+    &-paragraph
+      background-color $grayT4
+      color $blackT4
+      font-size $fs14
+      letter-spacing 0.7px
+      line-height 22px
+      padding 60px 130px 60px 60px
+
+@media screen and (max-width 800px)
+  .about
+    &-cover
+      &-content
+        margin 0 auto
+        width 80%
+
+    &-believe,
+    &-desc
+      padding-left 0
+
+    &-desc
+      &-paragraph
+        padding 40px 30px
+
+@media screen and (max-width 670px)
+  .about
+    &-cover
+      height 410px
+
+      &-logo
+        height 38px
+        width 39px
+
+      &-title
+        font-size $fs16
+        line-height 23px
+
+    &-believe
+      &-decorator
+        display none
+
+      &-paragraph
+        padding 40px 30px
+
+    &-believe-paragraph,
+    &-desc-paragraph
+      font-size $fs11
