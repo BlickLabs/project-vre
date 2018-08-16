@@ -1,0 +1,87 @@
+gothambook()
+  font-family 'GothamBook'
+  font-weight $medium
+  -webkit-font-smoothing: antialiased
+
+.contact
+  background-color $grayT4
+  padding 140px 0
+
+  &-content
+    margin 0 auto
+    width 480px
+
+  &-title
+    color $blackT2
+    font-size $fs26
+    letter-spacing 4.1px
+    line-height 33px
+    margin-bottom 20px
+    max-width 415px
+
+form#hsForm_437eb028-52df-4023-81d1-cb3542d7add9
+  .hs_firstname,
+  .hs_email,
+  .hs_phone,
+  .hs_message
+    display flex
+    flex-direction row
+    position relative
+
+    & #label-firstname-437eb028-52df-4023-81d1-cb3542d7add9,
+    & #label-email-437eb028-52df-4023-81d1-cb3542d7add9,
+    & #label-phone-437eb028-52df-4023-81d1-cb3542d7add9
+      display none
+
+  .hs-input
+    margin-top 35px
+    width 380px
+    background-color $whiteT1
+    border none
+    gothambook()
+    padding 0.8em 1em
+    font-size $fs12
+    height 40px
+
+  #message-437eb028-52df-4023-81d1-cb3542d7add9
+    height 200px
+    margin-bottom 35px
+    width 480px
+
+  .hs-error-msgs
+    bottom -20px
+    color red
+    font-size $fs12
+    gothambook()
+    list-style none
+    margin 0
+    padding-left 0
+    position absolute
+
+  .hs-button
+    background-color $orangeT1
+    btn-base()
+    gothambook()
+    transition 0.3s
+
+    &:hover
+      background-color $orangeT2
+      transition 0.3s
+
+@media screen and (max-width 540px)
+  .contact
+    padding 100px 0 60px 0
+
+    &-content
+      padding 0 30px
+      width 100%
+
+    &-title
+      font-size $fs18
+      line-height 23px
+
+  form#hsForm_437eb028-52df-4023-81d1-cb3542d7add9
+    .input,
+    .hs-input,
+    #message-437eb028-52df-4023-81d1-cb3542d7add9
+      width 100%
