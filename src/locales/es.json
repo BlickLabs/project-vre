@@ -20,11 +20,6 @@
           "viewName": "quote"
         },
         {
-          "section": "visítanos",
-          "link": "visitanos.html",
-          "viewName": "visit"
-        },
-        {
           "section": "contacto",
           "link": "contacto.html",
           "viewName": "contact"
