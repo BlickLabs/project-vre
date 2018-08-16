@@ -1,0 +1,34 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}Nosotros{% endblock %}
+
+{% set view_name = "aboutus" %}
+
+{% block content %}
+<section class="about">
+  <section class="about-cover">
+    <div class="about-cover-content">
+      <img class="about-cover-logo" src="{{es.aboutus.cover.logo}}">
+      <h1 class="about-cover-title gotham-book"><span class="gotham-medium">{{es.aboutus.cover.titleBold}}</span> {{es.aboutus.cover.title}}</h1>
+    </div>
+  </section>
+
+  <section class="about-believe">
+    <img class="about-believe-decorator" src="{{es.aboutus.believe.decorator}}">
+    <p class="about-believe-paragraph gotham-book">
+      Creemos firmemente que <b>las ciudades</b>, más no los países, <b>son y serán los elementos constitutivos de las economías en desarrollo</b>, y como consecuencia, estas deberán avanzar hacia desarrollos verticales con la finalidad de albergar a un mayor número de personas las cuales puedan <b>disfrutar de los extraordinarios beneficios y sinergias de vivir en una ciudad</b>.
+    </p>
+  </section>
+
+  <section class="about-desc">
+    <div class="about-desc-cover">
+      <img class="about-desc-cover-decorator" src="{{es.aboutus.secondCover.decorator}}">
+    </div>
+    <div class="about-desc-info">
+      <p class="about-desc-paragraph gotham-book">
+        <b>VRE México</b> es una desarrolladora inmobiliaria verticalmente integrada. Contamos con un equipo multidisciplinario comprometido con nuestros clientes e inversionistas. Nuestra plataforma cuenta con <b>más de 50 años de experiencia internacional</b> en los sectores de construcción, desarrollo inmobiliario, finanzas y diseño.
+      </p>
+    </div>
+  </section>
+</section>
+{% endblock %}
