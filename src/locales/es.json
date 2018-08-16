@@ -42,7 +42,7 @@
         {
           "section": "nosotros",
           "link": "nosotros.html",
-          "viewName": "us"
+          "viewName": "aboutus"
         }
       ],
       "icons": [
@@ -145,6 +145,19 @@
     "vacancies": {
       "title": "únete al equipo",
       "btnText": "siguiente"
+    },
+    "aboutus": {
+      "cover": {
+        "logo": "/img/logos/logo-vre-white.png",
+        "titleBold": "VRE México",
+        "title": "es una firma enfocada en el desarrollo inmobiliario dentro de las principales ciudades de México"
+      },
+      "believe": {
+        "decorator": "/img/about/about-cover-decorator.png"
+      },
+      "secondCover": {
+        "decorator": "/img/about/about-second-cover-decorator.png"
+      }
     },
     "privacy": {
       "title": "Aviso de",
