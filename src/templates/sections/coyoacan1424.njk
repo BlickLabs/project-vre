@@ -1,0 +1,151 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}Departamentos en preventa  y entrega inmediata | VRE México{% endblock %}
+
+{% set view_name = "developments" %}
+
+{% block content %}
+
+<section id="development">
+
+  <div class="vre-develop-cover cover-coyoacan">
+    <h1 class="cover-title">Coyoacán 1424</h1>
+    <h2 class="cover-subtitle">Del Valle Centro</h2>
+    <a class="btn--cotizar" href="https://cotiza.vre.com.mx/collections/coyoacan-1424">Cotizar o Apartar</a>
+  </div>
+
+  <div class="vre-develop-department-ubication">
+    <div class="develop-department">
+      <h3>Departamentos
+        <div class="line"></div>
+      </h3>
+      <div class="department-icons">
+        <ul class="icons-list">
+          <li class="list-item">
+            <img src="img/vre/metros.png" alt="Coyoacán 1424 130.1 Metros Cuadrados" />
+            <p>78.14-98.59 m&sup2;</p>
+          </li>
+          <li class="list-item">
+            <img src="img/vre/recamaras.png" alt="Coyoacán 1424 2 Recamaras" />
+            <p>1 - 2 Recámaras</p>
+          </li>
+          <li class="list-item">
+            <img src="img/vre/banio.png" alt="Coyoacán 1424 2.5 Baños" />
+            <p>1 - 2 Baños</p>
+          </li>
+          <li class="list-item">
+            <img src= "img/vre/estacionamiento.png" alt="Coyoacán 1424 2 Lugares de Estacionamiento" />
+            <p>1 - 2 Lugares Estacionamiento</p>
+          </li>
+          <li class="list-item">
+            <img src="img/vre/balcon.png" alt="Coyoacán 1424 Balcón" />
+            <p>Con opción</p>
+          </li>
+        </ul>
+      </div>
+      <div class="department-num-img">
+        <div class="department-num">
+          <ul class="num-list comercio-numdev-center">
+            <li data-id= "tipoa" class="item active">Tipo A</li>
+            <li data-id= "tipob" class="item">Tipo B</li>
+            <li data-id= "tipoc" class="item">Tipo C</li>
+            <li data-id= "tipod" class="item">Tipo D</li>
+            <li data-id= "tipoe" class="item">Tipo E</li>
+            <li data-id= "tipof" class="item">Tipo F</li>
+            <li data-id= "roof" class="item">Roof Garden</li>
+          </ul>
+        </div>
+        <div class="department-img">
+          <img src="img/vre/coyoacan/coyoacan-plano-tipo-a.jpg" alt="Coyoacán 1424 | VRE México">
+        </div>
+      </div>
+    </div>
+    <div class="develop-ubication">
+      <h3>Ubicación
+        <div class="line"></div>
+      </h3>
+      <div class="map">
+        <div id="location-map" class="location-map"></div>
+      </div>
+    </div>
+  </div>
+
+  <a class="btn--cotizar" href="https://cotiza.vre.com.mx/collections/coyoacan-1424">Cotizar o Apartar</a>
+
+  <div class="vre-characteristics-wrapper">
+    <div class="vre-characteristics">
+      <h4>Características <span>generales</span></h4>
+      <div class="line"></div>
+      <ul>
+        <li>
+          <div class="img-wrapper">
+            <img src="img/vre/cocina.png" alt="Coyoacán 1424 Cocina Equipada">
+          </div>
+          <p>Cocina equipada</p>
+        </li>
+        <li>
+          <div class="img-wrapper"><img src="img/vre/elevador.png" alt="Coyoacán 1424 Elevador"></div>
+          <p>Elevador</p>
+        </li>
+        <li>
+          <div class="img-wrapper"><img src="img/vre/roof-garden.png" alt="Coyoacán 1424 Roof Garden Común"></div>
+          <p>Roof Garden común</p>
+        </li>
+        <li>
+          <div class="img-wrapper"><img src="img/vre/bodega.png" alt="Coyoacán 1424 Bodega Privada"></div>
+          <p>Bodega privada</p>
+        </li>
+        <li>
+          <div class="img-wrapper"><img src="img/vre/lavado.png" alt="Coyoacán 1424 Cuarto de Lavado"></div>
+          <p>Cuarto de lavado</p>
+        </li>
+        <li>
+          <div class="img-wrapper"><img src="img/vre/pet-friendly.png" alt="Coyoacán 1424 Pet Friendly / Mascotas"></div>
+          <p>Pet Friendly</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="gray-container development-download-brochure">
+    <div class="development-download-brochure__inner">
+      <span>Si quieres más información, descarga aquí nuestro brochure de ventas</span>
+      <div id="brochure-form-wrapper"></div>
+    </div>
+  </div>
+
+  <div class="vre-gallery">
+    <ul>
+      <li>
+        <a href="img/vre/coyoacan/carousel1.jpg" class="swipebox">
+          <img class="js-gallery-item" src="img/vre/coyoacan/carousel1.jpg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="img/vre/coyoacan/carousel2.jpg" class="swipebox">
+          <img class="js-gallery-item" src="img/vre/coyoacan/carousel2.jpg" alt="">
+        </a>
+      </li>
+      <li class="gallery-item--hidden">
+        <a href="img/vre/coyoacan/carousel3.jpg" class="swipebox">
+          <img class="js-gallery-item" src="img/vre/coyoacan/carousel3.jpg" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swipebox/1.4.4/css/swipebox.min.css" integrity="sha256-5KRlt3ls3xVyu0Fv7M6hvDH0wCDqHraymjiBtOAhZZU=" crossorigin="anonymous" />
+{% endblock %}
+
+{% block js_inline %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/swipebox/1.4.4/js/jquery.swipebox.min.js" integrity="sha256-Yc+GwTnlWzpuQ6grDKOT67UA8d1M4Fx33JkNqX3Ke50=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    (function($) {
+      $('.swipebox').swipebox();
+    })(jQuery);
+  </script>
+{% endblock %}
