@@ -34,7 +34,7 @@
       </div>
       <div class="item vre-item-develop vre-develop-todos vre-develop-preventa">
         <a href="comercio44.html">
-          <div class="item-picture vre-item-picture background-coyoacan">
+          <div class="item-picture vre-item-picture background-comercio">
             <div class="vre-filtro preventa"><span class="vre-filtro-text gotham-book">Preventa</span></div>
           </div>
           <div class="development-info">
@@ -139,5 +139,82 @@
     </div>
   </div>
 </section>
+
+{% endblock %}
+
+{% block js_inline %}
+
+  <script>
+    (function() {
+
+      /**
+      * Funcionamiento de la tabs...
+      */
+      let btnTabs = $('.vre-btntabs-develop');
+      let allDevelops = $('.vre-develop-todos');
+
+      btnTabs.on("click", function(evt) {
+        let developSection = evt.currentTarget.name;
+        let currentSection = '';
+
+        if (
+          developSection == 'todos' ||
+          developSection == 'preventa' ||
+          developSection == 'inmediata' ||
+          developSection == 'vendido'
+        ) {
+          $(this)
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
+          currentSection = allDevelops.filter(".vre-develop-" + developSection);
+          $('.homepage-developments-items').html(currentSection);
+        }
+      });
+
+      /**
+      * Insertar los pines en el mapa...
+      */
+      window.onload = insertMap([19.395001, -99.17667], "Desarrollos", 14,
+        [
+          {
+            coordinates: [19.386183, -99.178583],
+            title: "Indiana 176"
+          },
+          {
+            coordinates: [19.38895, -99.178761],
+            title: "Dakota 322"
+          },
+          {
+            coordinates: [19.402214, -99.165347],
+            title: "Tlacotalpan 146"
+          },
+          {
+            coordinates: [19.395001, -99.17667],
+            title: "Nebraska 159"
+          },
+          {
+            coordinates: [19.397481, -99.174528],
+            title: "Chicago 61"
+          },
+          {
+            coordinates: [19.380275, -99.177901],
+            title: "Carolina 149"
+          },
+          {
+            coordinates: [19.3902978, -99.16869350000002],
+            title: "Concepción Beistegui 512"
+          },
+          {
+            coordinates: [19.3801826, -99.17853129999997],
+            title: "Atlanta 186"
+          },
+          {
+            coordinates: [19.405014, -99.177363],
+            title: "Comercio 44"
+          }
+        ]);
+    })();
+  </script>
 
 {% endblock %}
