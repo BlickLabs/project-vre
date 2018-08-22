@@ -18,15 +18,17 @@
   <div class="home-cover-form-container">
     <span class="home-cover-form-title gotham-medium">{{es.home.cover.formTitle}}</span>
     <form class="home-cover-form">
-      <div class="input-group">
-        <input class="form-control gotham-medium" type="text" name="fullname" id="fullname">
-        <label class="gotham-medium" for="fullname">Nombre completo</label>
-      </div>
-      <div class="input-group">
-        <input class="form-control gotham-medium" type="email" name="email" id="email">
-        <label class="gotham-medium" for="email">Correo electrónico</label>
-      </div>
-      <button class="btn orange gotham-book" type="submit">{{es.home.cover.btnText}}</button>
+      <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+      <![endif]-->
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script> 
+      <script>
+        hbspt.forms.create({
+	        portalId: "2469317",
+	        formId: "0fc6f2d3-12b6-4b99-92c6-d494bd74d079",
+	        css: ""
+        });
+      </script>
     </form>
   </div>
 </section>
