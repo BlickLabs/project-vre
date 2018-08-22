@@ -87,9 +87,8 @@ $(function() {
   });
 })();
 
-let insertMap = (function() {
+var insertMap = (function() {
   "use strict";
-  /*global google*/
   return function(latLng, mapTitle, zoom, locations) {
     function init() {
       var mapZoom = zoom !== undefined ? zoom : 13,
@@ -1042,9 +1041,10 @@ var departamentos_json = JSON.parse(departamentos_text);
 /**
  * Obtiene el elemento padre de la lista de caracteristicas,
  * Para poder eliminar y agregar las nuevas caractetristicas segun el, desarrollo y departamento seleccionado.
- * */
+ */
 
 var lista_de_caracteristicas = document.querySelector(".department-icons");
+
 var activar_elemento = function(el) {
   var length = el.parentNode.children.length;
   var elementos_de_lista = el.parentNode.children;
@@ -1060,21 +1060,6 @@ var activar_elemento = function(el) {
 /**
  * Actualiza la lista y la imagen del plano.
  * */
-var actualizar_caracteristicas = function(el, desarrollo) {
-  var lista_actual = document.querySelector(".icons-list");
-  var plano = document.querySelector(".department-img img");
-  var departamento = el.dataset.id;
-  var info_desarrollo =
-    departamentos_json.departamentos[desarrollo][departamento];
-  var nuevas_caracteristicas = "";
-
-  nuevas_caracteristicas = caracteristicas(departamento, desarrollo);
-  lista_de_caracteristicas.removeChild(lista_actual);
-  lista_de_caracteristicas.appendChild(nuevas_caracteristicas);
-  activar_elemento(el);
-  plano.src =
-    "/img/vre/" + desarrollo + "/" + info_desarrollo.caracteristicas.plano;
-};
 
 /**
  * Retorna el elemento UL.
@@ -1088,13 +1073,12 @@ var caracteristicas = function(depa, desa) {
    * var desarrollo = departamentos_json.departamentos[desa];
    * var caracteristicas = desarrollo[depa].caracteristicas;
    *
-   * Se crean elementos de listam, con las caracteristicas del departamento.
-   * */
+   * Se crean elementos de listam, con las caracteristicas del departamento.**/
   var ul = document.createElement("ul");
   ul.className = "icons-list";
 
   for (var caracteristica in caracteristicas) {
-    if (caracteristica != "plano") {
+    if (caracteristica !== "plano") {
       var li = document.createElement("li");
       var img = document.createElement("img");
       var p = document.createElement("p");
@@ -1109,10 +1093,26 @@ var caracteristicas = function(depa, desa) {
     }
   }
 
-  if (ul.children.length == 1) {
+  if (ul.children.length === 1) {
     ul.classList.add("icons-center");
     return ul;
   } else {
     return ul;
   }
+};
+
+var actualizar_caracteristicas = function(el, desarrollo) {
+  var lista_actual = document.querySelector(".icons-list");
+  var plano = document.querySelector(".department-img img");
+  var departamento = el.dataset.id;
+  var info_desarrollo =
+    departamentos_json.departamentos[desarrollo][departamento];
+  var nuevas_caracteristicas = "";
+
+  nuevas_caracteristicas = caracteristicas(departamento, desarrollo);
+  lista_de_caracteristicas.removeChild(lista_actual);
+  lista_de_caracteristicas.appendChild(nuevas_caracteristicas);
+  activar_elemento(el);
+  plano.src =
+    "/img/vre/" + desarrollo + "/" + info_desarrollo.caracteristicas.plano;
 };
