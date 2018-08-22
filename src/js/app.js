@@ -1061,19 +1061,37 @@ var activar_elemento = function(el) {
  * Actualiza la lista y la imagen del plano.
  * */
 
+var actualizar_caracteristicas = function(el, desarrollo) {
+  var lista_actual = document.querySelector(".icons-list");
+  var plano = document.querySelector(".department-img img");
+  var departamento = el.dataset.id;
+  var info_desarrollo = departamentos_json.departamentos[desarrollo][departamento];
+  var nuevas_caracteristicas = "";
+
+  nuevas_caracteristicas = caracteristicas(departamento, desarrollo);
+  lista_de_caracteristicas.removeChild(lista_actual);
+  lista_de_caracteristicas.appendChild(nuevas_caracteristicas);
+  activar_elemento(el);
+  plano.src = "/img/vre/" + desarrollo + "/" + info_desarrollo.caracteristicas.plano;
+};
+
 /**
  * Retorna el elemento UL.
  * Y sus elementos hijos LI ya con las caracteristicas.
  * */
+
 var caracteristicas = function(depa, desa) {
   /**
    * Se obtiene toda la informacion del departamento.
    * departamentos_json es parte del archivo info-departamentos.json.js
    * Contiene en formato JSON toda la inforamcion.
-   * var desarrollo = departamentos_json.departamentos[desa];
-   * var caracteristicas = desarrollo[depa].caracteristicas;
-   *
-   * Se crean elementos de listam, con las caracteristicas del departamento.**/
+   * */
+  var desarrollo = departamentos_json.departamentos[desa];
+  var caracteristicas = desarrollo[depa].caracteristicas;
+  
+   /**
+   * Se crean elementos de lista, con las caracteristicas del departamento.
+   * */
   var ul = document.createElement("ul");
   ul.className = "icons-list";
 
@@ -1099,20 +1117,4 @@ var caracteristicas = function(depa, desa) {
   } else {
     return ul;
   }
-};
-
-var actualizar_caracteristicas = function(el, desarrollo) {
-  var lista_actual = document.querySelector(".icons-list");
-  var plano = document.querySelector(".department-img img");
-  var departamento = el.dataset.id;
-  var info_desarrollo =
-    departamentos_json.departamentos[desarrollo][departamento];
-  var nuevas_caracteristicas = "";
-
-  nuevas_caracteristicas = caracteristicas(departamento, desarrollo);
-  lista_de_caracteristicas.removeChild(lista_actual);
-  lista_de_caracteristicas.appendChild(nuevas_caracteristicas);
-  activar_elemento(el);
-  plano.src =
-    "/img/vre/" + desarrollo + "/" + info_desarrollo.caracteristicas.plano;
 };
