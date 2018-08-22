@@ -25,7 +25,6 @@ $(function() {
   });
 });
 
-
 (function() {
   $("#selected-vacancie").on("change", function() {
     if ($(this).val() === "Accounting/Finance") {
@@ -87,7 +86,6 @@ $(function() {
     }
   });
 })();
-
 
 let insertMap = (function() {
   "use strict";
@@ -362,7 +360,6 @@ let insertMap = (function() {
     google.maps.event.addDomListener(window, "load", init);
   };
 })();
-
 
 /*
   * La variable departamentos_json queda declarada de manera global
@@ -1046,11 +1043,11 @@ var departamentos_json = JSON.parse(departamentos_text);
  * Obtiene el elemento padre de la lista de caracteristicas,
  * Para poder eliminar y agregar las nuevas caractetristicas segun el, desarrollo y departamento seleccionado.
  * */
- 
+
 var lista_de_caracteristicas = document.querySelector(".department-icons");
 var activar_elemento = function(el) {
-var length = el.parentNode.children.length;
-var elementos_de_lista = el.parentNode.children;
+  var length = el.parentNode.children.length;
+  var elementos_de_lista = el.parentNode.children;
 
   for (var i = 0; i < length; i++) {
     if (elementos_de_lista[i].classList.contains("active")) {
@@ -1060,8 +1057,9 @@ var elementos_de_lista = el.parentNode.children;
   }
 };
 
-* Actualiza la lista y la imagen del plano.
-*/
+/**
+ * Actualiza la lista y la imagen del plano.
+ * */
 var actualizar_caracteristicas = function(el, desarrollo) {
   var lista_actual = document.querySelector(".icons-list");
   var plano = document.querySelector(".department-img img");
@@ -1075,10 +1073,7 @@ var actualizar_caracteristicas = function(el, desarrollo) {
   lista_de_caracteristicas.appendChild(nuevas_caracteristicas);
   activar_elemento(el);
   plano.src =
-    "/img/vre/" +
-    desarrollo +
-    "/" +
-    info_desarrollo.caracteristicas.plano;
+    "/img/vre/" + desarrollo + "/" + info_desarrollo.caracteristicas.plano;
 };
 
 /**
@@ -1092,7 +1087,7 @@ var caracteristicas = function(depa, desa) {
    * Contiene en formato JSON toda la inforamcion.
    * var desarrollo = departamentos_json.departamentos[desa];
    * var caracteristicas = desarrollo[depa].caracteristicas;
-   * 
+   *
    * Se crean elementos de listam, con las caracteristicas del departamento.
    * */
   var ul = document.createElement("ul");
