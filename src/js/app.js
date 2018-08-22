@@ -1042,14 +1042,15 @@ var departamentos_text = JSON.stringify({
 
 var departamentos_json = JSON.parse(departamentos_text);
 
-// Obtiene el elemento padre de la lista de caracteristicas,
-// Para poder eliminar y agregar las nuevas caractetristicas segun el,
-// desarrollo y departamento seleccionado.
+/**
+ * Obtiene el elemento padre de la lista de caracteristicas,
+ * Para poder eliminar y agregar las nuevas caractetristicas segun el, desarrollo y departamento seleccionado.
+ * */
+ 
 var lista_de_caracteristicas = document.querySelector(".department-icons");
-
 var activar_elemento = function(el) {
-  var length = el.parentNode.children.length;
-  var elementos_de_lista = el.parentNode.children;
+var length = el.parentNode.children.length;
+var elementos_de_lista = el.parentNode.children;
 
   for (var i = 0; i < length; i++) {
     if (elementos_de_lista[i].classList.contains("active")) {
@@ -1059,7 +1060,6 @@ var activar_elemento = function(el) {
   }
 };
 
-/*
 * Actualiza la lista y la imagen del plano.
 */
 var actualizar_caracteristicas = function(el, desarrollo) {
@@ -1081,18 +1081,20 @@ var actualizar_caracteristicas = function(el, desarrollo) {
     info_desarrollo.caracteristicas.plano;
 };
 
-/*
-* Retorna el elemento UL.
-* Y sus elementos hijos LI ya con las caracteristicas.
-*/
+/**
+ * Retorna el elemento UL.
+ * Y sus elementos hijos LI ya con las caracteristicas.
+ * */
 var caracteristicas = function(depa, desa) {
-  // Se obtiene toda la informacion del departamento.
-  // departamentos_json es parte del archivo info-departamentos.json.js
-  // Contiene en formato JSON toda la inforamcion.
-  var desarrollo = departamentos_json.departamentos[desa];
-  var caracteristicas = desarrollo[depa].caracteristicas;
-
-  // Se crean elementos de listam, con las caracteristicas del departamento.
+  /**
+   * Se obtiene toda la informacion del departamento.
+   * departamentos_json es parte del archivo info-departamentos.json.js
+   * Contiene en formato JSON toda la inforamcion.
+   * var desarrollo = departamentos_json.departamentos[desa];
+   * var caracteristicas = desarrollo[depa].caracteristicas;
+   * 
+   * Se crean elementos de listam, con las caracteristicas del departamento.
+   * */
   var ul = document.createElement("ul");
   ul.className = "icons-list";
 
