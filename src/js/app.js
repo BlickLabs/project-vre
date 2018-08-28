@@ -7,7 +7,7 @@ $(function() {
     $(".nav-icon-info-mobile-hamburger-phone").fadeToggle(0);
   });
 
-  $(document).on("click", function(e) {
+  $(document).on("touchstart click scroll", function(e) {
     var $target = $(e.target);
     if (
       !$target.is(".nav-icon-phone") &&

@@ -15,6 +15,8 @@
       if (list.val()) {
         localStorage.setItem('vacante', list.val());
         window.location.href = '/unete-al-equipo.html';
+      } else {
+        alertify.error('Es necesario seleccionar una vacante.');
       }
     }
 
@@ -73,6 +75,7 @@
       })
       .done(function() {
         document.getElementById('form-cv').reset();
+        alertify.success('Gracias, nos pondremos en contacto contigo.');
       });
     }
 
@@ -81,7 +84,7 @@
       if(obtenerValores()) {
         enviarPeticion();
       } else {
-        return false;
+        alertify.error('Es necesario llenar todos los campos y adjuntar un archivo.');
       }
     });
   }
