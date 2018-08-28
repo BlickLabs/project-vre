@@ -4,6 +4,7 @@
     
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keyworks" content="departamento propio, departamento nuevo, nuevo hogar, cambio de departamento, departamentos entrega inmediata, apartar departamento, departamentos preventa, credito hipotecario, corazon de la ciudad de mexico, departamentos con roof garden, vre mexico, vre atlanta, vre carolina, vre chicago, vre tlacotalpan, vre nebraska, vre dakota, vre indiana, atlanta 186, carolina 149, chicago 61, tlacotalpan 146, nebraska 159, dakota 322, indiana 176, departamentos en la colonia napoles, departamentos en la colonia roma, departamentos en la delegacion benito juarez, departamentos venta df, venta departamentos cdmx, vertical real estate mexico">
   <meta name="description" content="" />
 
     <title>Vacante</title>
@@ -89,7 +90,7 @@
     </div>
     
     <div class="nav-option-content">
-      <a href="select-vacancie.html">
+      <a href="seleccionar-vacante.html">
         <span class="nav-option gotham-medium  active-section  nav-option-gray">vacantes</span>
       </a>
     </div>
@@ -103,17 +104,21 @@
   </div>
   <div class="nav-icon-container">
     <div class="nav-icon-content-desktop">
+    <a href="tel:+5215584372040" target="_blank">
       <div class="nav-icon-phone nav-icon-phone-gray">
         <div class="nav-icon-info gotham-book">(52) 55 84372040</div>
       </div>
+      </a>
     </div>
     <div class="nav-icon-content-mobile">
+    <a href="tel:+5215584372040" target="_blank">
       <div class="nav-icon-phone nav-icon-phone-gray">
         <div class="nav-icon-info-mobile-phone gotham-book">(52) 55 84372040</div>
       </div>
+      </a>
     </div>
     <div>
-      <a href="https://api.whatsapp.com/send?phone=5215559396716" target="_blank">
+      <a href="https://api.whatsapp.com/send?phone=5215584372040&text=Hola, me gustaría recibir más información sobre sus desarrollos." target="_blank">
         <div class="nav-icon-whatsapp nav-icon-whatsapp-gray"></div>
       </a>
     </div>
@@ -133,12 +138,14 @@
       </div>
       <div class="nav-icon-container"  data-attribute="">
         <div data-attribute="">
+        <a href="tel:+5215584372040" target="_blank">
           <div class="nav-icon-phone-mobile" data-attribute="">
             <div class="nav-icon-info-mobile-hamburger-phone gotham-book">(52) 55 84372040</div>
           </div>
+          </a>
         </div>
         <div  data-attribute="">
-          <a href="https://api.whatsapp.com/send?phone=5215559396716"  data-attribute="">
+          <a href="https://api.whatsapp.com/send?phone=5215584372040&text=Hola, me gustaría recibir más información sobre sus desarrollos."  data-attribute="" target="_blank">
             <div class="nav-icon-whatsapp nav-icon-whatsapp-gray"></div>
           </a>
         </div>
@@ -181,7 +188,7 @@
         </div>
         
         <div class="nav-option-content">
-          <a href="select-vacancie.html" data-attribute="">
+          <a href="seleccionar-vacante.html" data-attribute="">
             <span class="nav-option-mobile gotham-medium  active-section  nav-option-gray">vacantes</span>
           </a>
         </div>
@@ -203,11 +210,11 @@
   <div class="vacancie-panel">
     <div class="vacancie-panel-info">
       <h1 class="vacancie-panel-title gotham-book" id="select-vacancie-title">únete al equipo</h1>
-      <form class="vacancie-form">
+      <form id="form-cv" class="vacancie-form" method="POST" enctype="multipart/form-data">
         <div class="vacancie-form-content">
           <div class="vacancie-form-column">
             <div class="select-container" id="select-vacancie-dropdown">
-              <select class="select-dropdown" id="selected-vacancie" required>
+              <select class="select-dropdown" id="selected-vacancie" name="vacante" required>
                 <option value="" disabled selected></option>
                 <option value="Accounting/Finance">Accounting/Finance</option>
                 <option value="Administrative">Administrative</option>
@@ -221,7 +228,7 @@
             </div>
 
             <div class="select-container selected-accounting-finance" id="select-vacancie-dropdown">
-              <select class="select-dropdown" required>
+              <select class="select-dropdown" name="tipoVacante">
                 <option value="" disabled selected></option>
                 <option value="Intern">Intern</option>
                 <option value="Analyst">Analyst</option>
@@ -230,7 +237,7 @@
               <label class="select-label gotham-medium">Accounting/Finance</label>
             </div>
             <div class="select-container selected-administrative" id="select-vacancie-dropdown">
-              <select class="select-dropdown" required>
+              <select class="select-dropdown" name="tipoVacante">
                 <option value="" disabled selected></option>
                 <option value="HR">HR</option>
                 <option value="Procurement">Procurement</option>
@@ -239,7 +246,7 @@
               <label class="select-label gotham-medium">Administrative</label>
             </div>
             <div class="select-container selected-architecture" id="select-vacancie-dropdown">
-              <select class="select-dropdown" required>
+              <select class="select-dropdown" name="tipoVacante">
                 <option value="" disabled selected></option>
                 <option value="Intern">Intern</option>
                 <option value="Jr Architect">Jr Architect</option>
@@ -248,7 +255,7 @@
               <label class="select-label gotham-medium">Architecture</label>
             </div>
             <div class="select-container selected-business-development" id="select-vacancie-dropdown">
-              <select class="select-dropdown" required>
+              <select class="select-dropdown" name="tipoVacante">
                 <option value="" disabled selected></option>
                 <option value="Intern">Intern</option>
                 <option value="Analyst">Analyst</option>
@@ -259,7 +266,7 @@
               <label class="select-label gotham-medium">Business Development</label>
             </div>
             <div class="select-container selected-engineering" id="select-vacancie-dropdown">
-              <select class="select-dropdown" required>
+              <select class="select-dropdown" name="tipoVacante">
                 <option value="" disabled selected></option>
                 <option value="Site Engineer">Site Engineer</option>
                 <option value="Senior Supervisor Engineer">Senior Supervisor Engineer</option>
@@ -270,7 +277,7 @@
               <label class="select-label gotham-medium">Engineering</label>
             </div>
             <div class="select-container selected-commercial" id="select-vacancie-dropdown">
-              <select class="select-dropdown" required>
+              <select class="select-dropdown" name="tipoVacante">
                 <option value="" disabled selected></option>
                 <option value="Intern">Intern</option>
                 <option value="Analyst">Analyst</option>
@@ -279,7 +286,7 @@
               <label class="select-label gotham-medium">Commercial</label>
             </div>
             <div class="select-container selected-sales" id="select-vacancie-dropdown">
-              <select class="select-dropdown" required>
+              <select class="select-dropdown" name="tipoVacante">
                 <option value="" disabled selected></option>
                 <option value="Intern">Intern</option>
                 <option value="Analyst">Analyst</option>
@@ -289,37 +296,37 @@
             </div>
 
             <div class="input-group">
-              <input class="form-control" type="name" name="name" id="name">
-              <label class="gotham-medium" for="name">Nombre</label>
+              <input class="form-control" type="text" name="nombre" id="name" required>
+              <label class="gotham-medium" for="nombre">Nombre</label>
             </div>
             <div class="input-group">
-              <input class="form-control" type="lastname" name="lastname" id="lastname">
-              <label class="gotham-medium" for="lastname">Apellidos</label>
+              <input class="form-control" type="text" name="apellidos" id="lastname" required>
+              <label class="gotham-medium" for="apellidos">Apellidos</label>
             </div>
           </div>
           <div class="vacancie-form-column">
             <div class="vacancie-form-cv-container">
               <label class="vacancie-form-cv black btn gotham-book">
                 cargar mi cv <img class="vacancie-form-cv-icon" src="/img/icons/icon-upload.png">
-                <input type="file"/>
+                <input type="file" name="curriculum"/>
               </label>
             </div>
             <div class="select-container" id="select-vacancie-dropdown">
-              <select class="select-dropdown" required>
+              <select class="select-dropdown" name="nivelEstudios" required>
                 <option value="" disabled selected></option>
-                <option value="1">Estudiante</option>
-                <option value="2">Licenciatura</option>
-                <option value="3">Postgrado</option>
+                <option value="Estudiante">Estudiante</option>
+                <option value="Licenciatura">Licenciatura</option>
+                <option value="Postgrado">Postgrado</option>
               </select>
               <label class="select-label gotham-medium">Nivel de estudios</label>
             </div>
             <div class="input-group">
-              <input class="form-control" type="email" name="email" id="email">
-              <label class="gotham-medium" for="email">Correo electrónico</label>
+              <input class="form-control" type="email" name="correoElectronico" id="email" required>
+              <label class="gotham-medium" for="correoElectronico">Correo electrónico</label>
             </div>
           </div>
         </div>
-        <button class="btn orange gotham-book" type="submit">enviar</button>
+        <input class="btn orange gotham-book" type="submit" value="Enviar" id="js-enviarVacante">
       </form>
     </div>
   </div>
@@ -333,7 +340,7 @@
         <a href="index.html">
           <img class="footer-logo" src="img/logos/logo-vre-orange.png" alt="Logo footer">
         </a>
-        <span class="footer-copyrigth">© VRE 2018</span>
+        <span class="footer-copyrigth">© Vertical Real Estate 2018</span>
       </div>
       <div>
         <label class="footer-label gotham-medium" for="newsletter">newsletter</label>
@@ -362,7 +369,7 @@
           </a>
         </div>
         <div>
-          <a class="footer-section-container" href="">
+          <a class="footer-section-container" href="tel:+5215584372040">
             <div class="footer-icon-container">
               <div class="footer-icon phone"></div>
             </div>
@@ -370,11 +377,11 @@
           </a>
         </div>
         <div>
-          <a class="footer-section-container" href="">
+          <a class="footer-section-container" href="https://api.whatsapp.com/send?phone=5215584372040&text=Hola, me gustaría recibir más información sobre sus desarrollos." target="_blank">
             <div class="footer-icon-container">
               <div class="footer-icon whatsapp"></div>
             </div>
-            <span class="footer-section">+52 1 55 5939 6716</span>
+            <span class="footer-section">+52 1 55 8437 2040</span>
           </a>
         </div>
         <div>
@@ -404,10 +411,10 @@
           </a>
         </div>
         <div class="footer-icon-social-container">
-          <a href="">
+          <a href="https://www.facebook.com/vremexico/" target="_blank">
             <img class="footer-icon-social" src="/img/icons/icon-fb-orange.png">
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/vremexico/" target="_blank">
             <img class="footer-icon-social" src="/img/icons/icon-insta-orange.png">
           </a>
         </div>
@@ -426,8 +433,6 @@
     
     
     <div class="footer-background"></div>
-    
-    <div class="vacancie-decorator"></div>
     
   </body>
 </html>
