@@ -1,6 +1,7 @@
 {% extends "partials/base.njk" %}
 
-{% block title %}This{% endblock %}
+{% block title %}VRE México | Departamentos en el corazón de la Ciudad de México{% endblock %}
+{% set meta_description = "VRE México | Venta de departamentos en el corazón de la Ciudad de México" %}
 
 {% set view_name = "homepage" %}
 
@@ -36,13 +37,15 @@
 <section class="home-apartments">
   <section class="home-apartments-intro">
     <h3 class="home-apartments-title gotham-book">{{es.home.apartments.titlePart1}} <span class="gotham-medium">{{es.home.apartments.titlePart2}}</span> {{es.home.apartments.titlePart3}} <span class="gotham-medium">{{es.home.apartments.titlePart4}}</span></h3>
-    <a href="">
+    <a href="https://cotiza.vre.com.mx/">
       <button class="btn orange gotham-book">{{es.home.apartments.btnText}}</button>
     </a>
   </section>
   <section class="home-apartments-carousel-container">
     <div class="home-apartments-carousel owl-carousel">
+
       {% for carousel in es.home.apartments.carousel %}
+      <a href="{{ carousel.link }}">
       <div class="home-apartments-carousel-img-container">
         <img class="home-apartments-carousel-img" src="{{carousel.img}}">
         <span class="home-apartments-status gotham-medium">{{carousel.status}}</span>
@@ -51,14 +54,16 @@
           <h5 class="home-apartments-suburb gotham-medium">{{carousel.suburb}}</h5>
         </div>
       </div>
+      </a>
       {% endfor %}
+
     </div>
   </section>
   <div class="home-apartments-btns-container">
-    <a href="">
+    <a href="desarrollos.html">
       <button class="btn white gotham-book" id="button-transparent">ver todos</button>
     </a>
-    <a href="">
+    <a href="https://cotiza.vre.com.mx/">
       <button class="btn orange gotham-book">cotizar</button>
     </a>
   </div>
@@ -71,7 +76,7 @@
       <h3 class="home-panel-title-2 gotham-book">{{es.home.info.panel.titlePart2}}</h3>
       <p class="home-panel-desc gotham-book">{{es.home.info.panel.subtitle}}</p>
       <img class="home-panel-img" src="{{es.home.info.panel.img}}">
-      <a href="">
+      <a href="desarrollos.html">
         <button class="btn white gotham-book">{{es.home.info.panel.btnText}}</button>
       </a>
     </div>
@@ -80,7 +85,7 @@
   <div class="home-showroom">
     <div class="home-showroom-content">
       <h2 class="home-showroom-title gotham-book">{{es.home.info.showroom.titlePart1}}<br><span>{{es.home.info.showroom.titlePart2}}</span></h2>
-      <a href="">
+      <a href="contacto.html">
         <button class="btn black gotham-book">{{es.home.info.showroom.btnText}}</button>
       </a>
     </div>
@@ -95,7 +100,7 @@
   </div>
   <div class="home-blog-content">
     <h2 class="home-blog-title gotham-book">{{es.home.readBlog.title}}</h2>
-    <a href="">
+    <a href="https://blog.vre.com.mx/">
       <button class="btn orange gotham-book">{{es.home.readBlog.btnText}}</button>
     </a>
   </div>

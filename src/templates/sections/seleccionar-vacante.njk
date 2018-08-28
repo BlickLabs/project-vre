@@ -11,15 +11,19 @@
       <h1 class="vacancie-panel-title gotham-book" id="select-vacancie-title">{{es.vacancies.title}}</h1>
       <div id="select-vacancie-form">
         <div class="select-container" id="select-vacancie-dropdown">
-          <select class="select-dropdown" required>
+          <select class="select-dropdown" required id="js-listVacantes">
             <option value="" disabled selected></option>
-            <option value="1">Vacante 1</option>
-            <option value="2">Vacante 2</option>
-            <option value="3">Vacante 3</option>
+            <option value="Accounting/Finance">Accounting/Finance</option>
+            <option value="Administrative">Administrative</option>
+            <option value="Architecture">Architecture</option>
+            <option value="Business Development">Business Development</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Commercial">Commercial</option>
+            <option value="Sales">Sales</option>
           </select>
           <label class="select-label gotham-medium">Seleccionar vacante</label>
         </div>
-        <a href="vacancie.html">
+        <a href="unete-al-equipo.html" id="js-btnSiguiente">
           <button class="btn orange gotham-book">{{es.vacancies.btnText}}</button>
         </a>
       </div>
