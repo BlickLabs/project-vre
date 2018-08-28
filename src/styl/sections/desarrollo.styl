@@ -250,6 +250,11 @@ a,a:hover,a:active {
 
 .vre-characteristics-wrapper {
     margin-top: 3rem;
+
+    input.hs-input {
+        color: #444 !important;
+    }
+
 }
 
 .vre-characteristics-wrapper .vre-characteristics {
@@ -331,7 +336,7 @@ a,a:hover,a:active {
 
 .development-download-brochure {
     border: none !important;
-    background-color: rgba(216,216,216,0.75)
+    background-color: #ECECEC;
 }
 
 .vre-gallery {
@@ -788,11 +793,11 @@ a,a:hover,a:active {
 // Download brochure
 .development-download-brochure
   border none !important
-  background-color: rgba(216, 216, 216, 0.75);
+  background-color: #ECECEC;
 
 // Video 360
 .development-360-video
-  border 4rem solid #ffffff
+  border 5rem solid #ffffff
   background-color #f5f5f5
   font-size 18px
   letter-spacing: 0.1px
@@ -919,6 +924,23 @@ a,a:hover,a:active {
 
 .brochure {
 
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+
+            .hs_email {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+
+
 .hs-form-field .hs-error-msgs label {
     color: #f53838;
     display: block;
@@ -993,7 +1015,7 @@ a,a:hover,a:active {
 
 .development-download-brochure {
     border: none !important;
-    background-color: rgba(216,216,216,0.75)
+    background-color: #ECECEC;
 }
 
 .development-download-brochure {
@@ -1041,15 +1063,17 @@ a,a:hover,a:active {
     font-weight: 300;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: 0;
     min-width: 280px;
     padding: 14px 10px;
     text-align: center;
-    width: 85%;
+    width: 80%;
     font-family: 'GothamBook';
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
     font-size: 12px;
+    color: #444;
+    margin-right: 10px;
 }
 
 .development-download-brochure [type="email"]:focus {
@@ -1059,9 +1083,12 @@ a,a:hover,a:active {
 .development-download-brochure [type="submit"] {
     border: none !important;
     display: inline-block;
-    margin-top: 40px;
-    padding: 12px 20px !important;
-    width: 170px
+    margin-top: 0;
+    padding: 10px 10px !important;
+    width: 110px
+    margin-left: auto;
+    margin-right: auto;
+    height 35px;
 }
 
 @media screen and (max-width: 768px),screen and (max-width:773px) and (orientation:landscape),screen and (max-width:767px) and (orientation:portrait) {
@@ -1110,6 +1137,11 @@ a,a:hover,a:active {
     .development-360-video {
         border: 1rem solid #fff
     }
+    .vre-characteristics-wrapper .vre-characteristics h4 {
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -1117,6 +1149,7 @@ a,a:hover,a:active {
     .development-360-video .help-360 {
         font-size: 1rem
     }
+
 }
 
 .development-360-video {
