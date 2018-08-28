@@ -49,7 +49,7 @@
       &::placeholder
         color #ffffff
 
-    .hs-error-msgs
+    .hs-error-msgs,
       list-style none
       padding-left 0
       label
@@ -122,6 +122,12 @@
       flex-direction row
       margin 0 0 0 52px
       width 100%
+
+      .submitted-message p
+        color #fff
+        font-family "Gotham"
+        text-align center
+        font-size 12px
 
       & > .input-group
         margin-right 37px
@@ -514,6 +520,8 @@
       height 20px
 
 @media screen and (max-width 620px)
+  .home-blog-carousel-controls
+    display none
   .home
     &-cover
       height 555px
