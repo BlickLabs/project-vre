@@ -1,78 +1,79 @@
-.hbspt-form
-  width 100%
-
-  form
-    display flex
-    align-items center
-
-  fieldset.form-columns-2
-    max-width unset
+.home-cover
+  .hbspt-form
     width 100%
 
-    .input
-      margin-right 37px !important 
-
-  .hs-form-required,
-  .hs_error_rollup label
-    display none
-
-  .hs-button
-    border 0
-    background #e9852f
-    color #ffffff
-    cursor: pointer;
-    font-family "GothamBook"
-    font-size: 9px;
-    text-transform uppercase
-    letter-spacing: 2.5px;
-    height: 32px;
-    min-width: 101px;
-    text-align: center;
-    text-indent: 2.5px;
-    padding-top: 11px;
-    -webkit-padding-before: 4px;
-    position: relative;
-    width: 101px;
-    z-index: 1;
-
-
-  .hs-input
-    color #ffffff
-    font-family "Gotham"
-    font-size 10px
-    letter-spacing 1.1px
-    height: 35px;
-    font-weight: 500;
-    -webkit-font-smoothing: antialiased;
-
-    &::placeholder
-      color #ffffff
-
-  .hs-error-msgs
-    list-style none
-    padding-left 0
-    label
-      font-family "Gotham"
-      color #ffffff
-      font-size 11px
-
-  @media screen and (max-width 620px)
     form
-      flex-direction column
-      align-items flex-start
+      display flex
+      align-items center
 
-    fieldset.form-columns-2 > div
-      margin-bottom 20px;
+    fieldset.form-columns-2
+      max-width unset
+      width 100%
+
+      .input
+        margin-right 37px !important 
+
+    .hs-form-required,
+    .hs_error_rollup label
+      display none
+
+    .hs-button
+      border 0
+      background #e9852f
+      color #ffffff
+      cursor: pointer;
+      font-family "GothamBook"
+      font-size: 11px;
+      text-transform uppercase
+      letter-spacing: 2.5px;
+      height: 32px;
+      min-width: 101px;
+      text-align: center;
+      text-indent: 2.5px;
+      padding-top: 11px;
+      -webkit-padding-before: 4px;
+      position: relative;
+      width: 101px;
+      z-index: 1;
+
+
+    .hs-input
+      color #ffffff
+      font-family "Gotham"
+      font-size 10px
+      letter-spacing 1.1px
+      height: 35px;
+      font-weight: 500;
+      -webkit-font-smoothing: antialiased;
+
+      &::placeholder
+        color #ffffff
+
+    .hs-error-msgs
+      list-style none
+      padding-left 0
+      label
+        font-family "Gotham"
+        color #ffffff
+        font-size 11px
+
+    @media screen and (max-width 620px)
+      form
+        flex-direction column
+        align-items flex-start
+
+      fieldset.form-columns-2 > div
+        margin-bottom 20px;
 
 .home
   &-cover
     background-image url("/img/backgrounds/home-cover.jpg")
     background-position center
     background-repeat no-repeat
-    background-size cover
+    background-size 100% 100%
     display flex
     flex-direction column
-    height 611px
+    height 85vh
     justify-content space-between
     padding 140px 0 45px 0
 
@@ -326,7 +327,7 @@
       letter-spacing 0.7px
       line-height 15px
       margin-bottom 21px
-      max-width 285px
+      max-width 80%
       opacity 0.5
 
     &-img
@@ -372,6 +373,7 @@
 
     &-img
       width 100%
+      height 60vh
 
     &-content
       left 20%
@@ -379,7 +381,7 @@
       top 100px
 
     &-title
-      color $blackT3
+      color #fff
       font-size $fs30
       letter-spacing 4.1px
       line-height 33px
@@ -503,9 +505,13 @@
   .arrow
     &-left
       background-image url("/img/icons/icon-nav-left.png")
+      width 20px
+      height 20px
 
     &-right
       background-image url("/img/icons/icon-nav-right.png")
+      width 20px
+      height 20px
 
 @media screen and (max-width 620px)
   .home
@@ -518,7 +524,7 @@
         line-height 20px
 
         &-span
-          font-size $fs14
+          font-size 16px
           line-height 26px
           margin-top 18px
 
@@ -540,7 +546,7 @@
           width 100%
 
         &-title
-          font-size $fs10
+          font-size 13px
           margin-bottom 15px
           width auto
 

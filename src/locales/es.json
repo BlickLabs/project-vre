@@ -31,7 +31,7 @@
         },
         {
           "section": "vacantes",
-          "link": "select-vacancie.html",
+          "link": "seleccionar-vacante.html",
           "viewName": "selectVacancie"
         },
         {
@@ -79,36 +79,42 @@
         "btnText": "cotizar",
         "carousel": [
           {
+            "link": "coyoacan1424.html",
             "img": "/img/home/coyoacan1424.png",
             "status": "preventa",
             "suburb": "Colonia Del Valle Centro",
             "street": "Coyoacán 1424"
           },
           {
+            "link": "comercio44.html",
             "img": "/img/home/comercio44.png",
             "status": "preventa",
             "suburb": "Comercio 44",
             "street": "Colonia Escandón"
           },
           {
+            "link": "beistegui512.html",
             "img": "/img/home/beistegui512.png",
             "status": "preventa",
             "suburb": "Colonia Del Valle Norte",
             "street": "C. Beistegui 512"
           },
           {
+            "link": "atlanta186.html",
             "img": "/img/home/atlanta186.png",
             "status": "preventa",
             "suburb": "Colonia Noche Buena",
             "street": "Atlanta 186"
           },
           {
+            "link": "carolina149.html",
             "img": "/img/home/carolina149.png",
             "status": "preventa",
             "suburb": "Colonia Noche Buena",
             "street": "Carolina 149"
           },
           {
+            "link": "tlacotalpan146.html",
             "img": "/img/home/tlacotalpan146.png",
             "status": "Entrega Inmediata",
             "suburb": "Colonia Roma",
