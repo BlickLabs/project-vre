@@ -28,61 +28,110 @@ $(function() {
 (function() {
   $("#selected-vacancie").on("change", function() {
     if ($(this).val() === "Accounting/Finance") {
-      $(".selected-accounting-finance").show();
-      $(".selected-administrative").hide();
-      $(".selected-architecture").hide();
-      $(".selected-business-development").hide();
-      $(".selected-engineering").hide();
-      $(".selected-commercial").hide();
-      $(".selected-sales").hide();
+      $(".selected-accounting-finance")
+        .show().children().filter('select').attr('required', 'required');
+      $(".selected-administrative").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-architecture").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-business-development").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-engineering").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-commercial").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-sales").hide()
+      .children().filter('select').removeAttr('required');
     } else if ($(this).val() === "Administrative") {
-      $(".selected-administrative").show();
-      $(".selected-accounting-finance").hide();
-      $(".selected-architecture").hide();
-      $(".selected-business-development").hide();
-      $(".selected-engineering").hide();
-      $(".selected-commercial").hide();
-      $(".selected-sales").hide();
+      $(".selected-administrative")
+        .show().children().filter('select').attr('required', 'required');
+      $(".selected-accounting-finance").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-architecture").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-business-development").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-engineering").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-commercial").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-sales").hide()
+      .children().filter('select').removeAttr('required');
     } else if ($(this).val() === "Architecture") {
-      $(".selected-architecture").show();
-      $(".selected-accounting-finance").hide();
-      $(".selected-administrative").hide();
-      $(".selected-business-development").hide();
-      $(".selected-engineering").hide();
-      $(".selected-commercial").hide();
-      $(".selected-sales").hide();
+      $(".selected-architecture")
+        .show().children().filter('select').attr('required', 'required');
+      $(".selected-accounting-finance").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-administrative").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-business-development").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-engineering").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-commercial").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-sales").hide()
+      .children().filter('select').removeAttr('required');
     } else if ($(this).val() === "Business Development") {
-      $(".selected-business-development").show();
-      $(".selected-accounting-finance").hide();
-      $(".selected-administrative").hide();
-      $(".selected-architecture").hide();
-      $(".selected-engineering").hide();
-      $(".selected-commercial").hide();
-      $(".selected-sales").hide();
+      $(".selected-business-development")
+      .show().children().filter('select').attr('required', 'required');
+      $(".selected-accounting-finance").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-administrative").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-architecture").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-engineering").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-commercial").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-sales").hide()
+      .children().filter('select').removeAttr('required');
     } else if ($(this).val() === "Engineering") {
-      $(".selected-engineering").show();
-      $(".selected-accounting-finance").hide();
-      $(".selected-administrative").hide();
-      $(".selected-architecture").hide();
-      $(".selected-business-development").hide();
-      $(".selected-commercial").hide();
-      $(".selected-sales").hide();
+      $(".selected-engineering")
+      .show().children().filter('select').attr('required', 'required');
+      $(".selected-accounting-finance").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-administrative").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-architecture").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-business-development").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-commercial").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-sales").hide()
+      .children().filter('select').removeAttr('required');
     } else if ($(this).val() === "Commercial") {
-      $(".selected-commercial").show();
-      $(".selected-accounting-finance").hide();
-      $(".selected-administrative").hide();
-      $(".selected-architecture").hide();
-      $(".selected-business-development").hide();
-      $(".selected-engineering").hide();
-      $(".selected-sales").hide();
+      $(".selected-commercial")
+      .show().children().filter('select').attr('required', 'required');
+      $(".selected-accounting-finance").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-administrative").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-architecture").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-business-development").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-engineering").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-sales").hide()
+      .children().filter('select').removeAttr('required');
     } else if ($(this).val() === "Sales") {
-      $(".selected-sales").show();
-      $(".selected-accounting-finance").hide();
-      $(".selected-administrative").hide();
-      $(".selected-architecture").hide();
-      $(".selected-business-development").hide();
-      $(".selected-engineering").hide();
-      $(".selected-commercial").hide();
+      $(".selected-sales")
+      .show().children().filter('select').attr('required', 'required');
+      $(".selected-accounting-finance").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-administrative").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-architecture").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-business-development").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-engineering").hide()
+      .children().filter('select').removeAttr('required');
+      $(".selected-commercial").hide()
+      .children().filter('select').removeAttr('required');
     }
   });
 })();
