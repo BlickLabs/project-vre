@@ -7,14 +7,14 @@
   /**
    * Codigo para la vista de seleccion de vacantes.
    */
-  if (window.location.pathname === '/seleccionar-vacante.html') {
+  if (window.location.pathname === '/seleccionar-vacante.html' || window.location.pathname === '/seleccionar-vacante') {
     var btnSiguiente = $('#js-btnSiguiente');
     var listVacantes = $('#js-listVacantes');
 
     function seleccionarVacante(list) {
       if (list.val()) {
         localStorage.setItem('vacante', list.val());
-        window.location.href = '/unete-al-equipo.html';
+        window.location.href = '/unete-al-equipo';
       } else {
         alertify.error('Es necesario seleccionar una vacante.');
       }
@@ -30,7 +30,7 @@
    * Codigo para la vista de unete al equipo.
    */
 
-  if (window.location.pathname === '/unete-al-equipo.html') {
+  if (window.location.pathname === '/unete-al-equipo.html' || window.location.pathname === '/unete-al-equipo') {
     var btnenviarVacante = $('#js-enviarVacante');
     var listVacante = $('#selected-vacancie');
     var vacanteGuardada = localStorage.getItem('vacante');
