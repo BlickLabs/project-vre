@@ -6,7 +6,7 @@ var setNav = document.querySelector('.nav');
 
 //navbar-fixed-top
 function doSomething(scroll_pos) {
-  if (window.location.pathname === '/index.html' || window.location.pathname === '/' || window.location.pathname === '/project-vre/index.html' || window.location.pathname === '/project-vre/') {
+  if (window.location.pathname === '/index.html' || window.location.pathname === '/' || window.location.pathname === '/project-vre/index.html' || window.location.pathname === '/project-vre/' || window.location.pathname === 'index.html') {
     if (scroll_pos > 30) {
       setNav.classList.add('nav-scroll');
       $(".nav-logo-white").addClass('nav-logo-orange');
