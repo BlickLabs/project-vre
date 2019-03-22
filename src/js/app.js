@@ -1077,6 +1077,100 @@ var departamentos_text = JSON.stringify({
           plano: "coyoacan-plano-rg.jpg"
         }
       }
+    },
+    colima49: {
+      d102: {
+        caracteristicas: {
+          metros: "198.3 m&sup2",
+          recamaras: "2 Recámaras",
+          banio: "3 Baños",
+          estacionamiento: "2 Lugares E.",
+          terraza: "Terraza",
+          plano: "colima49-plano-102.jpg"
+        }
+      },
+      d301: {
+        caracteristicas: {
+          metros: "195.1 m&sup2",
+          recamaras: "2 Recámaras",
+          banio: "2.5 Baños",
+          estacionamiento: "2 Lugares E.",
+          balcon: "Balcón",
+          roof: "Roof Privado",
+          plano: "colima49-plano-301.jpg"
+        }
+      },
+      d302: {
+        caracteristicas: {
+          metros: "165.6 m&sup2",
+          recamaras: "2 Recámaras",
+          banio: "3 Baños",
+          estacionamiento: "2 Lugares E.",
+          plano: "colima49-plano-302.jpg"
+        }
+      },
+      d401: {
+        caracteristicas: {
+          metros: "196.7 m&sup2",
+          recamaras: "2 Recámaras",
+          banio: "2.5 Baños",
+          estacionamiento: "2 Lugares E.",
+          balcon: "Balcón",
+          roof: "Roof Privado",
+          plano: "colima49-plano-401.jpg"
+        }
+      },
+      d402: {
+        caracteristicas: {
+          metros: "137.6 m&sup2",
+          recamaras: "1 Recámara",
+          banio: "2 Baños",
+          estacionamiento: "1 Lugar E.",
+          roof: "Roof Privado",
+          plano: "colima49-plano-402.jpg"
+        }
+      },
+      d403: {
+        caracteristicas: {
+          metros: "216.4 m&sup2",
+          recamaras: "2 Recámaras",
+          banio: "2.5 Baños",
+          estacionamiento: "2 Lugares E.",
+          balcon: "Balcón",
+          roof: "Roof Privado",
+          plano: "colima49-plano-403.jpg"
+        }
+      },
+      roofcomun: {
+        caracteristicas: {
+          metros: "80.10 m&sup2;",
+          plano: "colima49-plano-rgpcomun.png"
+        }
+      },
+      roof301: {
+        caracteristicas: {
+          metros: "49.7 m&sup2;",
+          plano: "colima49-plano-rgp301.png"
+        }
+      },
+      roof401: {
+        caracteristicas: {
+          metros: "51.3 m&sup2;",
+          plano: "colima49-plano-rgp401.png"
+        }
+      },
+      roof402: {
+        caracteristicas: {
+          metros: "68.8 m&sup2;",
+          plano: "colima49-plano-rgp402.png"
+        }
+      },
+      roof403: {
+        caracteristicas: {
+          metros: "53.2 m&sup2;",
+          plano: "colima49-plano-rgp403.png"
+        }
+      } 
     }
   }
 });
