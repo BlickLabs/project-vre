@@ -79,6 +79,13 @@
         "btnText": "cotizar",
         "carousel": [
           {
+            "link": "colima49.html",
+            "img": "/img/home/colima49.jpg",
+            "status": "preventa",
+            "suburb": "Colonia Roma Norte",
+            "street": "Colima 49"
+          },
+          {
             "link": "coyoacan1424.html",
             "img": "/img/home/coyoacan1424.png",
             "status": "preventa",
