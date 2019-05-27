@@ -8,28 +8,59 @@
 
 {% block content %}
 <section class="about">
-  <section class="about-cover">
-    <div class="about-cover-content">
-      <img class="about-cover-logo" src="{{es.aboutus.cover.logo}}">
-      <h1 class="about-cover-title gotham-book"><span class="gotham-medium">{{es.aboutus.cover.titleBold}}</span> {{es.aboutus.cover.title}}</h1>
+  <section class="cover">
+    <h1 class="cover-title gotham-book">nosotros</h1>
+  </section>
+  <section class="convictions">
+    <div class="pillars">
+      <span class="pillars-vre gotham-medium">vre méxico</span>
+      <h2 class="pillars-title gotham-book">nuestros <b>pilares</b></h2>
+      <p class="pillars-paragraph principal gotham-book">Desde su fundación en 2016, en VRE creamos <b>cuatro pilares</b> los cuales nos han permitido crecer ordenada e institucionalmente:</p>
+      <h3 class="pillars-subtitle gotham-medium">desarrollador enfocado en el cliente</h3>
+      <p class="pillars-paragraph gotham-book">Estamos comprometidos a proporcionar una experiencia diferenciada a nuesteos clientes.</p>
+      <h3 class="pillars-subtitle gotham-medium">producto de alta calidad</h3>
+      <p class="pillars-paragraph gotham-book">VRE está comprometido a entregar un producto final de primera categoría ya que es lo que más diferencia a nuestra Firma del mercado.</p>
+      <h3 class="pillars-subtitle gotham-medium">integridad</h3>
+      <p class="pillars-paragraph gotham-book">Creemos en la preservación del capital de nuestros socios, clientes y equipo junto con la generación de valor de largo plazo por lo que en VRE evitamos la toma de riesgos innecesarios en las distintas etapas de nuestro desarrollo.</p>
+      <h3 class="pillars-subtitle gotham-medium">automatización y productividad</h3>
+      <p class="pillars-paragraph gotham-book">El equipo de VRE se encuentra completamente enfocado en identificar las áreas de oportunidad de mejora continua e incremento en productividad dentro de toda nuestra cadena de valor.</p>
+    </div>
+    <div class="identity">
+      <h2 class="identity-title mission-icon gotham-book">nuestra misión</h2>
+      <p class="identity-desc gotham-book">VRE diseña, construye y comercializa desarrollos verticales residenciales en el corazón de las principales ciudades. Buscamos ofrecer un excelente producto a precios altamente competitivos con el fin de que cada día más personas puedan disfrutar del centro de las ciudades.  Nuestro producto busca cumplir con las más estrictas normas de calidad nacionales e internacionales. Buscamos desafiar el estatus quo de la construcción y buscamos oportunidades de crecimiento de largo plazo para nuestro equipo profesional y una creación de valor superior para nuestros accionistas.</p>
+      <div class="separator"></div>
+      <h2 class="identity-title vision-icon gotham-book">nuestra visión</h2>
+      <p class="identity-desc gotham-book">Creemos en las sinergias que se generan al vivir en el corazón de las ciudades y en la ciudad como una amenidad en la cual nuestros desarrollos buscan generar comunidad. Creemos en que es posible capitalizar las oportunidades del mercado mediante un crecimiento integral y sustentable, cuidando a todos los participantes de nuestra cadena de valor. Creemos que nuestra constante innovación e inversión en tecnología permitirá a nuestro equipo brindar lo mejor de VRE a nuestros clientes. </p>
     </div>
   </section>
 
-  <section class="about-believe">
-    <img class="about-believe-decorator" src="{{es.aboutus.believe.decorator}}">
-    <p class="about-believe-paragraph gotham-book">
-      Creemos firmemente que <b>las ciudades</b>, más no los países, <b>son y serán los elementos constitutivos de las economías en desarrollo</b>, y como consecuencia, estas deberán avanzar hacia desarrollos verticales con la finalidad de albergar a un mayor número de personas las cuales puedan <b>disfrutar de los extraordinarios beneficios y sinergias de vivir en una ciudad</b>.
-    </p>
+  <section class="work">
+    <h2 class="work-title gotham-book">Diseñamos, <b>construimos,</b> comercializamos</h2>
+    <div class="work-carousel owl-carousel">
+      {% for carousel in es.aboutus.work.carousel %}
+      <img class="work-carousel-img" src="{{carousel.img}}">
+      {% endfor %}
+    </div>
   </section>
 
-  <section class="about-desc">
-    <div class="about-desc-cover">
-      <img class="about-desc-cover-decorator" src="{{es.aboutus.secondCover.decorator}}">
-    </div>
-    <div class="about-desc-info">
-      <p class="about-desc-paragraph gotham-book">
-        <b>VRE México</b> es una desarrolladora inmobiliaria verticalmente integrada. Contamos con un equipo multidisciplinario comprometido con nuestros clientes e inversionistas. Nuestra plataforma cuenta con <b>más de 50 años de experiencia internacional</b> en los sectores de construcción, desarrollo inmobiliario, finanzas y diseño.
-      </p>
+  <section class="objective">
+    <span class="pillars-vre gotham-medium">nuestro</span>
+    <h1 class="pillars-title gotham-book">objetivo <b>social</b></h1>
+    <p class="pillars-paragraph gotham-book">Nuestro objetivo social se compone de tres puntos:</p>
+
+    <div class="objective-card-container">
+      <div class="objective-card card-one">
+        <span class="objective-card-tag gotham-medium">uno</span>
+        <p class="objective-card-paragraph gotham-book">Contribuir en el <b>desarrollo vertical de las ciudades</b> a través de nuestra propuesta de valor inmobiliaria. Creemos firmemente que las <b>ciudades</b>, más no los países, <b>son los elementos constitutivos de las economías en desarrollo</b> y estas deberán de avanzar hacia una mayor densidad.</p>
+      </div>
+      <div class="objective-card card-two">
+        <span class="objective-card-tag gotham-medium">dos</span>
+        <p class="objective-card-paragraph gotham-book"><b>Participar activamente</b> en el <b>incremento de la productividad de nuestro sector</b>, a través de inversiones en activos y tecnología de largo plazo junto con desarrollo profesional de <b>nuestro equipo</b>.</p>
+      </div>
+      <div class="objective-card card-three">
+        <span class="objective-card-tag gotham-medium">tres</span>
+        <p class="objective-card-paragraph gotham-book"><b>Diseñar y desarrollar</b> proyectos inmobiliarios con <b>una visión sustentable</b>. Partiendo desde la propuesta arquitectónica hasta la ejecución del proceso constructivo y selección de materiales.</p>
+      </div>
     </div>
   </section>
 </section>
