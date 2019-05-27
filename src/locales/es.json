@@ -65,8 +65,8 @@
       "cover": {
         "titlePart1": "diseñamos,",
         "titlePart2": " desarrollamos y vendemos",
-        "titleSpanPart1": "departamentos en",
-        "titleSpanPart2": "el corazón de la cdmx",
+        "titleSpanPart1": "desarrollamos proyectos en el",
+        "titleSpanPart2": "corazón de la cdmx",
         "scrollText": "desliza hacia abajo",
         "formTitle": "recibe más información",
         "btnText":"enviar"
@@ -132,7 +132,7 @@
       "info": {
         "panel": {
           "titlePart1": "en vre méxico",
-          "titlePart2": "nos encargamos de todas las etapas de desarrollo",
+          "titlePart2": "supervisamos todas las etapas del desarrollo",
           "subtitle": "Gracias a esto podemos ofrecer departamentos de alta calidad, precios competitivos y atención personalizada",
           "img": "/img/home/home-apartment.jpg",
           "imgMobile": "/img/home/home-apartment-mobile.png",
@@ -164,11 +164,27 @@
         "titleBold": "VRE México",
         "title": "es una firma enfocada en el desarrollo inmobiliario dentro de las principales ciudades de México"
       },
-      "believe": {
-        "decorator": "/img/about/about-cover-decorator.png"
-      },
-      "secondCover": {
-        "decorator": "/img/about/about-second-cover-decorator.png"
+      "work": {
+        "carousel": [
+          {
+            "img": "/img/about/nosotros-carrusel-1.jpg"
+          },
+          {
+            "img": "/img/about/nosotros-carrusel-2.jpg"
+          },
+          {
+            "img": "/img/about/nosotros-carrusel-3.jpg"
+          },
+          {
+            "img": "/img/about/nosotros-carrusel-4.jpg"
+          },
+          {
+            "img": "/img/about/nosotros-carrusel-5.jpg"
+          },
+          {
+            "img": "/img/about/nosotros-carrusel-6.jpg"
+          }
+        ]
       }
     },
     "privacy": {
