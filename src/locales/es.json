@@ -107,18 +107,18 @@
             "street": "C. Beistegui 512"
           },
           {
-            "link": "atlanta186.html",
-            "img": "/img/home/atlanta186.png",
-            "status": "Entrega Inmediata",
-            "suburb": "Colonia Noche Buena",
-            "street": "Atlanta 186"
-          },
-          {
             "link": "carolina149.html",
             "img": "/img/home/carolina149.png",
             "status": "Entrega Inmediata",
             "suburb": "Colonia Noche Buena",
             "street": "Carolina 149"
+          },
+          {
+            "link": "atlanta186.html",
+            "img": "/img/home/atlanta186.png",
+            "status": "Vendido",
+            "suburb": "Colonia Noche Buena",
+            "street": "Atlanta 186"
           },
           {
             "link": "tlacotalpan146.html",
