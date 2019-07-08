@@ -96,8 +96,8 @@
             "link": "comercio44.html",
             "img": "/img/home/comercio44.png",
             "status": "preventa",
-            "suburb": "Comercio 44",
-            "street": "Colonia Escandón"
+            "suburb": "Colonia Escandón",
+            "street": "Comercio 44"
           },
           {
             "link": "beistegui512.html",
@@ -116,16 +116,9 @@
           {
             "link": "atlanta186.html",
             "img": "/img/home/atlanta186.png",
-            "status": "Vendido",
+            "status": "Entrega Inmediata",
             "suburb": "Colonia Noche Buena",
             "street": "Atlanta 186"
-          },
-          {
-            "link": "tlacotalpan146.html",
-            "img": "/img/home/tlacotalpan146.png",
-            "status": "Vendido",
-            "suburb": "Colonia Roma",
-            "street": "Tlacotalpan 146"
           }
         ]
       },
