@@ -247,10 +247,10 @@
   </div>
   <div class="homepage-gray-divider text-center vre-develops">
     <div class="iframe-selector">
-      <a name="todos" class="vre-btntabs-develop iframe-option active gotham-book">Todos</a>
-      <a name="preventa" class="vre-btntabs-develop iframe-option gotham-book">Preventa</a>
-      <a name="inmediata" class="vre-btntabs-develop iframe-option vre-tabs-full gotham-book">Entrega inmediata</a>
-      <!-- <a name="vendido" class="vre-btntabs-develop iframe-option gotham-book">Vendidos</a> -->
+      <a name="todos" class="tab-todos vre-btntabs-develop iframe-option active gotham-book">Todos</a>
+      <a name="preventa" class="elresto vre-btntabs-develop iframe-option gotham-book">Preventa</a>
+      <a name="inmediata" class="elresto vre-btntabs-develop iframe-option vre-tabs-full gotham-book">Entrega inmediata</a>
+      <a name="entregados" class="tab-entregados vre-btntabs-develop iframe-option gotham-book">Proyectos entregados</a>
     </div>
     <div class="homepage-developments-items vre-items-develop">
     <div class="item vre-item-develop vre-develop-todos vre-develop-preventa">
@@ -297,28 +297,25 @@
           </div>
         </a>
       </div>
-      <div class="item vre-item-develop vre-develop-todos vre-develop-inmediata">
-        <a href="carolina149.html">
-          <div class="item-picture vre-item-picture background-carolina">
-            <div class="vre-filtro inmediata"><span class="vre-filtro-text gotham-book">Entrega Inmediata</span></div>
-          </div>
-          <div class="development-info">
-            <h3 class="info-nombre gotham-medium">Carolina 149</h3>
-            <p class="info-colonia gotham-book">Colonia <span>Noche Buena</span></p>
-          </div>
-        </a>
-      </div>
-      <div class="item vre-item-develop vre-develop-todos vre-develop-inmediata">
-        <a href="atlanta186.html">
-          <div class="item-picture vre-item-picture background-atlanta">
-            <div class="vre-filtro inmediata"><span class="vre-filtro-text gotham-book">Entrega Inmediata</span></div>
-          </div>
-          <div class="development-info">
-            <h3 class="info-nombre gotham-medium">Atlanta 186</h3>
-            <p class="info-colonia gotham-book">Colonia <span>Noche Buena</span></p>
-          </div>
-        </a>
-      </div>
+
+      <section class="vre-item-develop vre-develop-todos vre-develop-entregados entregados-section">
+        <div>
+          <h2 class="gotham-medium">Colonia Nápoles</h2>
+          <p class="gotham-book">Chicago | Vendido y Entregado</p>
+          <p class="gotham-book">Dakota | Vendido y Entregado</p>
+          <p class="gotham-book">Indiana | Vendido y Entregado</p>
+          <p class="gotham-book">Nebraska | Vendido y Entregado</p>
+        </div>
+        <div>
+          <h2 class="gotham-medium">Colonia Noche Buena</h2>
+          <p class="gotham-book">Carolina | Vendido y Entregado</p>
+          <p class="gotham-book">Atlanta | Vendido y Entregado</p>
+        </div>
+        <div>
+          <h2 class="gotham-medium">Colonia Roma Ssur</h2>
+          <p class="gotham-book">Tlatotalpan | Vendido y Entregado</p>
+        </div>
+      </section>
       <!-- <div class="item vre-item-develop vre-develop-todos vre-develop-vendido">
         <a href="chicago61.html">
           <div class="item-picture vre-item-picture background-chicago">
@@ -501,7 +498,7 @@
           developSection == 'todos' ||
           developSection == 'preventa' ||
           developSection == 'inmediata' ||
-          developSection == 'vendido'
+          developSection == 'entregados'
         ) {
           $(this)
             .addClass("active")
@@ -510,6 +507,16 @@
           currentSection = allDevelops.filter(".vre-develop-" + developSection);
           $('.homepage-developments-items').html(currentSection);
         }
+      });
+
+      $(".tab-todos.active").parent().siblings(".homepage-developments-items").children(".entregados-section").addClass("visibleElem");
+
+      $('.tab-entregados').click(function(){
+        $(this).parent().siblings(".homepage-developments-items").children(".entregados-section").removeClass("visibleElem");
+      });
+
+      $('.tab-todos.active').click(function(){
+        $(this).parent().siblings(".homepage-developments-items").children(".entregados-section").addClass("visibleElem");
       });
 
       /**
@@ -556,6 +563,10 @@
           {
             coordinates: [19.420934, -99.155731],
             title: "Colima 49"
+          },
+          {
+            coordinates: [19.3711532, -99.1714376],
+            title: 'Coyoacán 1424'
           }
         ]);
     })();
