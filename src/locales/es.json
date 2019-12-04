@@ -105,20 +105,6 @@
             "status": "Entrega Inmediata",
             "suburb": "Colonia Del Valle Norte",
             "street": "C. Beistegui 512"
-          },
-          {
-            "link": "carolina149.html",
-            "img": "/img/home/carolina149.png",
-            "status": "Entrega Inmediata",
-            "suburb": "Colonia Noche Buena",
-            "street": "Carolina 149"
-          },
-          {
-            "link": "atlanta186.html",
-            "img": "/img/home/atlanta186.png",
-            "status": "Entrega Inmediata",
-            "suburb": "Colonia Noche Buena",
-            "street": "Atlanta 186"
           }
         ]
       },
