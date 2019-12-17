@@ -20,13 +20,8 @@
           "viewName": "quote"
         },
         {
-          "section": "visitanos",
-          "link": "visitanos.html",
-          "viewName": "visit"
-        },
-        {
           "section": "contacto",
-          "link": "contact.html",
+          "link": "contacto.html",
           "viewName": "contact"
         },
         {
@@ -35,28 +30,43 @@
           "viewName": "blog"
         },
         {
+          "section": "vacantes",
+          "link": "seleccionar-vacante.html",
+          "viewName": "selectVacancie"
+        },
+        {
           "section": "nosotros",
           "link": "nosotros.html",
-          "viewName": "us"
+          "viewName": "aboutus"
         }
       ],
       "icons": [
         {
           "class": "nav-icon-phone",
+          "classMobile": "nav-icon-phone-mobile",
+          "classAlternative": "nav-icon-phone-gray",
           "classInfo": "nav-icon-info",
-          "info": "(52) 55 84372040"
+          "info": "(52) 55 84372040",
+          "classInfoMobile": "nav-icon-info-mobile-phone",
+          "classInfoHamburger": "nav-icon-info-mobile-hamburger-phone"
         },
         {
           "class": "nav-icon-whatsapp",
+          "classMobile": "nav-icon-whatsapp-mobile",
+          "classAlternative": "nav-icon-whatsapp-gray",
           "classInfo": "nav-icon-info",
-          "info": "+51 1 55 5939 6716"
+          "info": "+51 1 55 5939 6716",
+          "classInfoMobile": "nav-icon-info-mobile-whats",
+          "classInfoHamburger": "nav-icon-info-mobile-hamburger-whats"
         }
       ]
     },
     "home": {
       "cover": {
-        "title": "diseñamos, desarrollamos y vendemos",
-        "titleSpan": "departamentos en el corazón de la cdmx",
+        "titlePart1": "diseñamos,",
+        "titlePart2": " desarrollamos y vendemos",
+        "titleSpanPart1": "desarrollamos proyectos en el",
+        "titleSpanPart2": "corazón de la cdmx",
         "scrollText": "desliza hacia abajo",
         "formTitle": "recibe más información",
         "btnText":"enviar"
@@ -69,49 +79,42 @@
         "btnText": "cotizar",
         "carousel": [
           {
+            "link": "colima49.html",
+            "img": "/img/home/colima49.jpg",
+            "status": "preventa",
+            "suburb": "Colonia Roma Norte",
+            "street": "Colima 49"
+          },
+          {
+            "link": "coyoacan1424.html",
             "img": "/img/home/coyoacan1424.png",
             "status": "preventa",
             "suburb": "Colonia Del Valle Centro",
             "street": "Coyoacán 1424"
           },
           {
+            "link": "comercio44.html",
             "img": "/img/home/comercio44.png",
-            "status": "preventa",
-            "suburb": "Comercio 44",
-            "street": "Colonia Escandón"
+            "status": "entrega inmediata",
+            "suburb": "Colonia Escandón",
+            "street": "Comercio 44"
           },
           {
+            "link": "beistegui512.html",
             "img": "/img/home/beistegui512.png",
-            "status": "preventa",
+            "status": "Entrega Inmediata",
             "suburb": "Colonia Del Valle Norte",
             "street": "C. Beistegui 512"
-          },
-          {
-            "img": "/img/home/atlanta186.png",
-            "status": "preventa",
-            "suburb": "Colonia Noche Buena",
-            "street": "Atlanta 186"
-          },
-          {
-            "img": "/img/home/carolina149.png",
-            "status": "preventa",
-            "suburb": "Colonia Noche Buena",
-            "street": "Carolina 149"
-          },
-          {
-            "img": "/img/home/tlacotalpan146.png",
-            "status": "Entrega Inmediata",
-            "suburb": "Colonia Roma",
-            "street": "Tlacotalpan 146"
           }
         ]
       },
       "info": {
         "panel": {
           "titlePart1": "en vre méxico",
-          "titlePart2": "nos encargamos de todas las etapas de desarrollo",
+          "titlePart2": "supervisamos todas las etapas del desarrollo",
           "subtitle": "Gracias a esto podemos ofrecer departamentos de alta calidad, precios competitivos y atención personalizada",
           "img": "/img/home/home-apartment.jpg",
+          "imgMobile": "/img/home/home-apartment-mobile.png",
           "btnText": "ver todos"
         },
         "showroom": {
@@ -121,10 +124,73 @@
         }
       },
       "readBlog": {
-        "img": "/img/home/home-read-blog.png",
+        "img": "/img/home/home-read-blog.jpg",
         "title": "conoce más sobre el mundo inmobiliario",
         "btnText": "leer blog"
       }
+    },
+    "vacancies": {
+      "title": "únete al equipo",
+      "btnText": "siguiente"
+    },
+    "contact": {
+      "title": "Escríbenos para conocer",
+      "titleBold": "los desarrollos"
+    },
+    "aboutus": {
+      "cover": {
+        "logo": "/img/logos/logo-vre-white.png",
+        "titleBold": "VRE México",
+        "title": "es una firma enfocada en el desarrollo inmobiliario dentro de las principales ciudades de México"
+      },
+      "work": {
+        "carousel": [
+          {
+            "img": "/img/about/nosotros-carrusel-1.jpg"
+          },
+          {
+            "img": "/img/about/nosotros-carrusel-2.jpg"
+          },
+          {
+            "img": "/img/about/nosotros-carrusel-3.jpg"
+          },
+          {
+            "img": "/img/about/nosotros-carrusel-4.jpg"
+          },
+          {
+            "img": "/img/about/nosotros-carrusel-5.jpg"
+          },
+          {
+            "img": "/img/about/nosotros-carrusel-6.jpg"
+          }
+        ]
+      }
+    },
+    "privacy": {
+      "title": "Aviso de",
+      "titleBold": "Privacidad",
+      "subtitle": "AVISO DE PRIVACIDAD PARA CLIENTES DE ADMINISTRACIÓN VRE, S.A.P.I. DE C.V. (”VRE”) CON DOMICILIO EN CALLE I, MZN X, NO. 16, 04400, COLONIA EDUCACIÓN, COYOACÁN, CIUDAD DE MÉXICO, MÉXICO.",
+      "paragraphOne": "Sus datos personales son muy importantes para VRE y serán tratados con base en los principios de licitud, consentimiento, información, calidad, finalidad, lealtad, proporcionalidad y responsabilidad en términos de la legislación aplicable y se utilizarán para:",
+      "list": [
+        {
+          "item": "Informarle acerca de los diversos servicios de construcción de VRE"
+        },
+        {
+          "item": "Mandarle comunicados y notas preparadas por VRE sobre temas que consideramos de su interés relacionados al giro de esta compañía"
+        },
+        {
+          "item": "Invitarlo a eventos organizados por VRE y para compartirle otro material que pueda interesarle"
+        }
+      ],
+      "paragraphTwo": "La información que recopilamos es su nombre y correo electrónico. En caso de que no desee que sus datos personales sean tratados para estos fines, desde este momento usted lo puede comunicar personalmente a la cuenta de correo electrónico hola@vre.com.mx. Nos comprometemos a no transferir su información personal a terceros sin su consentimiento, salvo las excepciones previstas en el artículo 37 de la Ley, así como a realizar esta transferencia en los términos que fija esa ley.",
+      "paragraphThree": "Usted, como titular, tiene derecho a (i) acceder a sus datos personales en posesión de VRE y conocer los detalles del tratamiento de los mismos, (ii) rectificarlos en caso de estar desactualizados, ser inexactos o estar incompletos, (iii) cancelarlos cuando considere que no están siendo utilizados, conforme a los principios, deberes y obligaciones aplicables, u (iv) oponerse al tratamiento de los mismos para fines específicos. Usted puede ejercer sus derechos enviando un correo electrónico a la dirección hola@vre.com.mx, indicando: i) el nombre completo del titular de los datos personales, domicilio y cuenta de correo electrónico, para poder comunicarle la respuesta a su solicitud, ii) los documentos que acrediten la identidad, iii) la descripción clara y precisa de los datos personales respecto de los que se busca ejercer alguno de los derechos antes mencionados y iv) en su caso, las modificaciones a realizarse y aportar la documentación que sustente su petición.",
+      "paragraphFour": "Cualquier cambio en el presente aviso de privacidad estará disponible en esta página y queda bajo responsabilidad del usuario leer este aviso de privacidad periódicamente para estar al tanto de posibles modificaciones."
+    },
+    "terms": {
+      "title": "Términos y",
+      "titleBold": "Condiciones",
+      "paragraphOne": " El contenido dentro del sitio web de ADMINISTRACIÓN VRE S.A.P.I. de C.V. (“VRE ”) es de fines informativos únicamente. Se han realizado todos los esfuerzos pertinentes para asegurar la exactitud de toda la información aquí contenida.",
+      "paragraphTwo": " El usuario de este sitio reconoce que la información obtenida del Sitio Web de VRE es propiedad de VRE y por lo tanto no se otorga al usuario ningún derecho o título de propiedad intelectual sobre la información. El usuario reconoce y acepta que no podrá copiar, duplicar o reproducir, en ninguna forma, la información, excepto para su uso personal, quedando terminantemente prohibido el uso comercial de la misma."
     }
   }
 }

@@ -1,0 +1,23 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}Aviso de privacidad | VRE México{% endblock %}
+
+{% set view_name = "privacy" %}
+
+{% block content %}
+<section class="privacy">
+  <h1 class="privacy-title gotham-book">{{es.privacy.title}} <span class="gotham-medium">{{es.privacy.titleBold}}</span></h1>
+  <section class="privacy-information gotham-book">
+    <h2 class="gotham-medium privacy-subtitle">{{es.privacy.subtitle}}</h2>
+    <p>{{es.privacy.paragraphOne}}</p>
+    <ol>
+      {% for list in es.privacy.list %}
+      <li>{{list.item}}</li>
+      {% endfor %}
+    </ol>
+    <p>{{es.privacy.paragraphTwo}}</p>
+    <p>{{es.privacy.paragraphThree}}</p>
+    <p>{{es.privacy.paragraphFour}}</p>
+  </section>
+</section>
+{% endblock %}

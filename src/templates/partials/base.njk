@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% include 'seo/googleanalytics.njk' %}
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-M9PNTGJ');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22082118-58"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-22082118-58');
+    </script>
+    
     {% include 'seo/metatags.njk' %}
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/vre-favicon@2x.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/vre-favicon.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/css/{{ projectFilesName }}.libs.css">
+    <link rel="stylesheet" href="/css/main.css">
     {% block extra_css %}{% endblock %}
-    <link rel="stylesheet" href="css/{{ projectFilesName }}.libs.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Change - {% block title %}{% endblock %}</title>
-    <link runat="server" rel="shortcut icon" href="img/favicon/" type="image/x-icon"/>
-    <link runat="server" rel="icon" href="img/favicon/" type="image/ico"/>
+    {% include 'seo/googleanalytics.njk' %}
     {% include 'seo/facebookpixel.njk' %}
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYJxTs6nptICwPefTB_XR6yA2BUmUg-5A"></script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9PNTGJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  
     <div id="page">
       {% include 'partials/navbar.njk' %}
       <main>
@@ -23,11 +53,18 @@
     </div>
     {% block js_libs_config %}
     {% endblock %}
-    <script src="js/{{ projectFilesName }}.libs.js"></script>
+    <script src="/js/{{ projectFilesName }}.libs.js"></script>
     {% block js_project_config %}
     {% endblock %}
-    <script src="js/{{ projectFilesName }}.js"></script>
+    <script src="/js/{{ projectFilesName }}.js"></script>
     {% block js_inline %}
     {% endblock %}
+    <div class="footer-background"></div>
+    {% if section == 'vacancie' or section == 'select-vacancie' %}
+    <div class="vacancie-decorator"></div>
+    {% endif %}
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2469317.js"></script>
+    <!-- End of HubSpot Embed Code -->
   </body>
 </html>

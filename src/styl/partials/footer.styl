@@ -1,15 +1,12 @@
 .footer
   align-items center
-  background-image url("../img/backgrounds/footer-bg.png")
-  background-position bottom right
-  background-repeat no-repeat
-  background-size contain
   bottom 0
   display flex
   height 244px
-  padding-left 80px
+  padding-left 100px
   position absolute
   width 100%
+  z-index 1
 
   &-content
     display flex
@@ -17,38 +14,38 @@
 
   &-column
     &-one
-      margin-right 100px
+      margin-right 150px
 
     &-info
       display flex
       flex-direction row
 
     &-two
-      margin-right 60px
+      margin-right 80px
 
     &-two,
     &-three
-      width 180px
+      width 216px
 
   &-logo
     height 45px
-    width 47px
+    width auto
 
     &-container
-      align-items center
       display flex
+      flex-direction column
       margin-bottom 30px
 
   &-copyrigth
     color $blackT1
     font-size $fs9
     letter-spacing 1.1px
-    margin-left 10px
+    margin-top 10px
 
   &-label,
   &-titles
     color $blackT1
-    font-size $fs10
+    font-size $fs13
     letter-spacing 2px
     text-transform uppercase
 
@@ -61,22 +58,6 @@
       border-bottom solid 1px $blackT1
       margin-top 15px
 
-  &-input
-    background-color $grayT3
-    border none
-    color $blackT1
-    font-size $fs10
-    height 28px
-    letter-spacing 0.7px
-    margin-right 10px
-    padding 0 10px
-    width 199px
-
-    &-container
-      display flex
-      flex-direction row
-      margin-top 10px
-
   &-icon
     background-position center
     background-repeat no-repeat
@@ -84,19 +65,19 @@
 
     &-container
       margin-right 10px
-      min-width 13px
+      min-width 15px
 
     &.mail
       background-image url("../img/icons/icon-mail-gray.png")
-      height 8px
+      height 9px
       margin-top 8px
-      width 12px
+      width 13px
 
     &.phone
       background-image url("../img/icons/icon-phone-gray.png")
-      height 13px
+      height 14px
       margin-top 6px
-      width 13px
+      width 14px
 
     &.whatsapp
       background-image url("../img/icons/icon-whatsapp-gray.png")
@@ -106,20 +87,20 @@
 
     &.pin
       background-image url("../img/icons/icon-pin-gray.png")
-      height 13px
+      height 15px
       margin-top 5px
-      width 10px
+      width 11px
 
     &-social
-      height 21px
-      width 21px
+      height 26px
+      width 26px
 
       &-container
         margin-top 10px
 
   &-section
     color $blackT1
-    font-size $fs10
+    font-size $fs12
     letter-spacing 0.6px
     line-height 24px
 
@@ -145,6 +126,61 @@
       &:hover > .footer-icon-container .footer-icon.pin
         background-image url("../img/icons/icon-pin-orange.png")
 
+form#hsForm_91b63c0e-33bc-459c-bf47-0e6819c792d7
+  display flex
+  flex-direction row
+  margin-top 10px
+
+  & #label-email-91b63c0e-33bc-459c-bf47-0e6819c792d7
+    display none
+
+  #email-91b63c0e-33bc-459c-bf47-0e6819c792d7
+    background-color $grayT3
+    border none
+    color $blackT1
+    font-size $fs12
+    height 28px
+    letter-spacing 0.7px
+    margin-right 10px
+    padding 0 10px
+    width 199px
+
+  .hs_email
+    position relative
+
+  .hs_error_rollup
+    display none
+
+  .hs-error-msgs
+    bottom -20px
+    color red
+    font-size $fs12
+    gothambook()
+    list-style none
+    margin 0
+    padding-left 0
+    position absolute
+
+  .hs-button
+    background-color $orangeT1
+    btn-base()
+    gothambook()
+    transition 0.3s
+    height 28px
+
+    &:hover
+      background-color $orangeT2
+      transition 0.3s
+
+@media screen and (max-width 1170px)
+  .footer
+    justify-content center
+    padding-left 0
+
+    &-column
+      &-one
+        margin-right 65px
+
 @media screen and (max-width 970px)
   .footer
     height 390px
@@ -153,28 +189,76 @@
 
     &-content
       flex-wrap wrap
-      width 421px
+      width 513px
 
     &-column
       &-info
         margin-top 40px
 
-@media screen and (max-width 500px)
+@media screen and (max-width 560px)
   .footer
-    height 600px
+    height 500px
+    align-items flex-start
+    padding-top 50px
 
     &-content
-      width 201px
+      justify-content center
+
+    &-section,
+    &-label,
+    &-titles
+      font-size $fs10
 
     &-column
+      &-two,
+      &-three
+        width 178px
+
+      &-two
+        margin-right 30px
+
+@media screen and (max-width 425px)
+  .footer
+    align-items center
+    height 600px
+    padding-top 0
+
+    &-content
+      align-items flex-start
+      flex-direction column
+      width 310px
+
+    &-column
+      &-one,
+      &-two
+        margin-right 0
+
       &-info
         flex-direction column
 
       &-three
         margin-top 30px
 
-    &-input
-      margin 0 0 10px 0
+  form#hsForm_91b63c0e-33bc-459c-bf47-0e6819c792d7
+    flex-wrap wrap
 
-      &-container
-        flex-direction column
+  #email-91b63c0e-33bc-459c-bf47-0e6819c792d7
+    margin 0 10px 10px 0425
+
+@media screen and (max-width 360px)
+  .footer
+    &-content
+      align-items center
+      width 201px
+
+  form#hsForm_91b63c0e-33bc-459c-bf47-0e6819c792d7
+    flex-direction column
+
+    .hs-error-msgs
+      margin-bottom 10px
+      position initial
+
+  #email-91b63c0e-33bc-459c-bf47-0e6819c792d7
+    margin 0 0 10px 0
+    width 199px
+  

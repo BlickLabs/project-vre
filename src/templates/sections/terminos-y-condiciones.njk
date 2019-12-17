@@ -1,0 +1,23 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}Términos y Condiciones | VRE México{% endblock %}
+
+{% set view_name = "terms" %}
+
+{% block content %}
+<section class="terms">
+  <h1 class="terms-title gotham-book">{{es.terms.title}} <span class="gotham-medium">{{es.terms.titleBold}}</span></h1>
+  <section class="terms-information gotham-book">
+    <h2 class="gotham-medium terms-subtitle">{{es.terms.subtitle}}</h2>
+    <p>{{es.terms.paragraphOne}}</p>
+    <ol>
+      {% for list in es.terms.list %}
+      <li>{{list.item}}</li>
+      {% endfor %}
+    </ol>
+    <p>{{es.terms.paragraphTwo}}</p>
+    <p>{{es.terms.paragraphThree}}</p>
+    <p>{{es.terms.paragraphFour}}</p>
+  </section>
+</section>
+{% endblock %}

@@ -6,13 +6,14 @@ var setNav = document.querySelector('.nav');
 
 //navbar-fixed-top
 function doSomething(scroll_pos) {
-  if (window.location.pathname === '/index.html' || window.location.pathname === '/' || window.location.pathname === '/project-vre/index.html' || window.location.pathname === '/project-vre/') {
+  if (window.location.pathname === '/index.html' || window.location.pathname === '/' || window.location.pathname === '/project-vre/index.html' || window.location.pathname === '/project-vre/' || window.location.pathname === 'index.html' || window.location.pathname === 'index' || window.location.pathname === '/index') {
     if (scroll_pos > 30) {
       setNav.classList.add('nav-scroll');
       $(".nav-logo-white").addClass('nav-logo-orange');
       $(".nav-icon-phone").addClass('nav-icon-phone-gray');
       $(".nav-icon-whatsapp").addClass('nav-icon-whatsapp-gray');
       $(".nav-option").addClass('nav-option-gray');
+      $(".nav-hamburger-icon").addClass('nav-hamburger-icon-orange');
 
     } else {
       setNav.classList.remove('nav-scroll');
@@ -20,6 +21,7 @@ function doSomething(scroll_pos) {
       $(".nav-icon-phone").removeClass('nav-icon-phone-gray');
       $(".nav-icon-whatsapp").removeClass('nav-icon-whatsapp-gray');
       $(".nav-option").removeClass('nav-option-gray');
+      $(".nav-hamburger-icon").removeClass('nav-hamburger-icon-orange');
 
     }
   }
@@ -46,11 +48,15 @@ window.addEventListener('scroll', function(e) {
 function showMenu() {
   document.querySelector('#menuContainer').style.width = '85%';
   document.querySelector('#hamburgerMenu').style.display = 'none';
+  document.querySelector('.if-hamburger-open').style.display = 'none';
+  document.querySelector('.nav-icon-container').style.display = 'none';
 }
 
 function hideMenu() {
   document.querySelector('#menuContainer').style.width = '0%';
   document.querySelector('#hamburgerMenu').style.display = 'inline';
+  document.querySelector('.if-hamburger-open').style.display = 'block';
+  document.querySelector('.nav-icon-container').style.display = 'flex';
 }
 
 window.addEventListener('click', function(e) {

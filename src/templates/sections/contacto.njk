@@ -1,0 +1,26 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}Información sobre nuestros departamentos en venta | VRE México{% endblock %}
+
+{% set meta_description = "Deja tu mensaje y recibirás información sobre nuestros departamentos exclusivos" %}
+
+{% set view_name = "contact" %}
+
+{% block content %}
+<section class="contact">
+  <div class="contact-content">
+    <h1 class="contact-title gotham-book">{{es.contact.title}} <span class="gotham-medium">{{es.contact.titleBold}}</span></h1>
+    <!--[if lte IE 8]>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        portalId: "2469317",
+        formId: "437eb028-52df-4023-81d1-cb3542d7add9",
+        css: ""
+    });
+    </script>
+  </div>
+</section>
+{% endblock %}

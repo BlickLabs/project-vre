@@ -1,0 +1,66 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}Firma inmobiliaria en la Ciudad de México | VRE México{% endblock %}
+
+{% set meta_description = "VRE México es una firma inmobiliaria dentro de la Ciudad de Mexico con amplia experiencia en el sector" %}
+
+{% set view_name = "aboutus" %}
+
+{% block content %}
+<section class="about">
+  <section class="cover">
+    <h1 class="cover-title gotham-book">nosotros</h1>
+  </section>
+  <section class="convictions">
+    <div class="pillars">
+      <span class="pillars-vre gotham-medium">vre méxico</span>
+      <h2 class="pillars-title gotham-book">nuestros <b>pilares</b></h2>
+      <p class="pillars-paragraph principal gotham-book">Desde su fundación en 2016, en VRE creamos <b>cuatro pilares</b> los cuales nos han permitido crecer ordenada e institucionalmente:</p>
+      <h3 class="pillars-subtitle gotham-medium">desarrollador enfocado en el cliente</h3>
+      <p class="pillars-paragraph gotham-book">Estamos comprometidos a proporcionar una experiencia diferenciada a nuestros clientes.</p>
+      <h3 class="pillars-subtitle gotham-medium">producto de alta calidad</h3>
+      <p class="pillars-paragraph gotham-book">Entregamos un producto final de primera categoría ya que es lo que más diferencia a nuestra Firma del mercado.</p>
+      <h3 class="pillars-subtitle gotham-medium">integridad</h3>
+      <p class="pillars-paragraph gotham-book">Creemos en la preservación del capital de nuestros socios, clientes y equipo junto con la generación de valor de largo plazo por lo que en VRE evitamos la toma de riesgos innecesarios en las distintas etapas de nuestros desarrollos.</p>
+      <h3 class="pillars-subtitle gotham-medium">automatización y productividad</h3>
+      <p class="pillars-paragraph gotham-book">El equipo de VRE se encuentra completamente enfocado en identificar las áreas de oportunidad de mejora continua e incremento en productividad dentro de toda nuestra cadena de valor.</p>
+    </div>
+    <div class="identity">
+      <h2 class="identity-title mission-icon gotham-book">nuestra misión</h2>
+      <p class="identity-desc gotham-book">Desarrollamos proyectos en el corazón de las principales ciudades. Buscamos ofrecer un excelente producto a precios altamente competitivos con el fin de que cada día más personas puedan disfrutar del centro de las ciudades.  Nuestro producto busca cumplir con las más estrictas normas de calidad nacionales e internacionales. Buscamos oportunidades de largo plazo para nuestro equipo profesional y una creación de valor superior para nuestros accionistas.</p>
+      <div class="separator"></div>
+      <h2 class="identity-title vision-icon gotham-book">nuestra visión</h2>
+      <p class="identity-desc gotham-book">Creemos en las sinergias que se generan al vivir en el corazón de las ciudades y en la ciudad como una amenidad en la cual nuestros desarrollos buscan generar comunidad. Creemos que es posible capitalizar las oportunidades del mercado mediante un crecimiento integral y sustentable, cuidando a todos los participantes de nuestra cadena de valor. Creemos que nuestra constante innovación e inversión en tecnología permitirá a nuestro equipo brindar lo mejor de VRE a nuestros clientes. </p>
+    </div>
+  </section>
+
+  <section class="work">
+    <div class="work-carousel owl-carousel">
+      {% for carousel in es.aboutus.work.carousel %}
+      <img class="work-carousel-img" src="{{carousel.img}}">
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="objective">
+    <span class="pillars-vre gotham-medium">nuestro</span>
+    <h1 class="pillars-title gotham-book">objetivo <b>social</b></h1>
+    <p class="pillars-paragraph gotham-book">Nuestro objetivo social se compone de tres puntos:</p>
+
+    <div class="objective-card-container">
+      <div class="objective-card card-one">
+        <span class="objective-card-tag gotham-medium">uno</span>
+        <p class="objective-card-paragraph gotham-book">Contribuir en el <b>desarrollo vertical de las ciudades</b> a través de nuestra propuesta de valor inmobiliaria. Creemos firmemente que las <b>ciudades</b>, más no los países, <b>son los elementos constitutivos de las economías en desarrollo</b> y estas deberán de avanzar hacia una mayor densidad.</p>
+      </div>
+      <div class="objective-card card-two">
+        <span class="objective-card-tag gotham-medium">dos</span>
+        <p class="objective-card-paragraph gotham-book"><b>Participar activamente</b> en el <b>incremento de la productividad de nuestro sector</b>, a través de inversiones en activos y tecnología de largo plazo junto con desarrollo profesional de <b>nuestro equipo</b>.</p>
+      </div>
+      <div class="objective-card card-three">
+        <span class="objective-card-tag gotham-medium">tres</span>
+        <p class="objective-card-paragraph gotham-book"><b>Desarrollamos</b> proyectos inmobiliarios con <b>una visión sustentable</b>. Partiendo desde la propuesta arquitectónica hasta la ejecución del proceso constructivo y selección de materiales.</p>
+      </div>
+    </div>
+  </section>
+</section>
+{% endblock %}

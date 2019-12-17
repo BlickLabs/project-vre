@@ -1,0 +1,133 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}Envía tu CV | VRE México{% endblock %}
+
+{% set view_name = "selectVacancie" %}
+
+{% block content %}
+<section class="vacancie">
+  <div class="vacancie-panel">
+    <div class="vacancie-panel-info">
+      <h1 class="vacancie-panel-title gotham-book" id="select-vacancie-title">{{es.vacancies.title}}</h1>
+      <form id="form-cv" class="vacancie-form" method="POST" enctype="multipart/form-data">
+        <div class="vacancie-form-content">
+          <div class="vacancie-form-column">
+            <div class="select-container" id="select-vacancie-dropdown">
+              <select class="select-dropdown" id="selected-vacancie" name="vacante" required>
+                <option value="" disabled selected></option>
+                <option value="Accounting/Finance">Accounting/Finance</option>
+                <option value="Administrative">Administrative</option>
+                <option value="Architecture">Architecture</option>
+                <option value="Business Development">Business Development</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Commercial">Commercial</option>
+                <option value="Sales">Sales</option>
+              </select>
+              <label class="select-label gotham-medium">Seleccionar vacante</label>
+            </div>
+
+            <div class="select-container selected-accounting-finance" id="select-vacancie-dropdown">
+              <select class="select-dropdown" name="tipoVacante">
+                <option value="" disabled selected></option>
+                <option value="Intern">Intern</option>
+                <option value="Analyst">Analyst</option>
+                <option value="Associate">Associate</option>
+              </select>
+              <label class="select-label gotham-medium">Accounting/Finance</label>
+            </div>
+            <div class="select-container selected-administrative" id="select-vacancie-dropdown">
+              <select class="select-dropdown" name="tipoVacante">
+                <option value="" disabled selected></option>
+                <option value="HR">HR</option>
+                <option value="Procurement">Procurement</option>
+                <option value="Legal">Legal</option>
+              </select>
+              <label class="select-label gotham-medium">Administrative</label>
+            </div>
+            <div class="select-container selected-architecture" id="select-vacancie-dropdown">
+              <select class="select-dropdown" name="tipoVacante">
+                <option value="" disabled selected></option>
+                <option value="Intern">Intern</option>
+                <option value="Jr Architect">Jr Architect</option>
+                <option value="Senior Architect">Senior Architect</option>
+              </select>
+              <label class="select-label gotham-medium">Architecture</label>
+            </div>
+            <div class="select-container selected-business-development" id="select-vacancie-dropdown">
+              <select class="select-dropdown" name="tipoVacante">
+                <option value="" disabled selected></option>
+                <option value="Intern">Intern</option>
+                <option value="Analyst">Analyst</option>
+                <option value="Associate">Associate</option>
+                <option value="Institutional Relations Analyst">Institutional Relations Analyst</option>
+                <option value="Institutional Relations Associate">Institutional Relations Associate</option>
+              </select>
+              <label class="select-label gotham-medium">Business Development</label>
+            </div>
+            <div class="select-container selected-engineering" id="select-vacancie-dropdown">
+              <select class="select-dropdown" name="tipoVacante">
+                <option value="" disabled selected></option>
+                <option value="Site Engineer">Site Engineer</option>
+                <option value="Senior Supervisor Engineer">Senior Supervisor Engineer</option>
+                <option value="Automation Engineer">Automation Engineer</option>
+                <option value="Structural Design Engineer">Structural Design Engineer</option>
+                <option value="Budgeting and Programming">Budgeting and Programming</option>
+              </select>
+              <label class="select-label gotham-medium">Engineering</label>
+            </div>
+            <div class="select-container selected-commercial" id="select-vacancie-dropdown">
+              <select class="select-dropdown" name="tipoVacante">
+                <option value="" disabled selected></option>
+                <option value="Intern">Intern</option>
+                <option value="Analyst">Analyst</option>
+                <option value="Associate">Associate</option>
+              </select>
+              <label class="select-label gotham-medium">Commercial</label>
+            </div>
+            <div class="select-container selected-sales" id="select-vacancie-dropdown">
+              <select class="select-dropdown" name="tipoVacante">
+                <option value="" disabled selected></option>
+                <option value="Intern">Intern</option>
+                <option value="Analyst">Analyst</option>
+                <option value="Associate">Associate</option>
+              </select>
+              <label class="select-label gotham-medium">Sales</label>
+            </div>
+
+            <div class="input-group">
+              <input class="form-control" type="text" name="nombre" id="name" required>
+              <label class="gotham-medium" for="nombre">Nombre</label>
+            </div>
+            <div class="input-group">
+              <input class="form-control" type="text" name="apellidos" id="lastname" required>
+              <label class="gotham-medium" for="apellidos">Apellidos</label>
+            </div>
+          </div>
+          <div class="vacancie-form-column">
+            <div class="vacancie-form-cv-container">
+              <label class="vacancie-form-cv black btn gotham-book">
+                cargar mi cv <img class="vacancie-form-cv-icon" src="/img/icons/icon-upload.png">
+                <input type="file" name="curriculum"/>
+              </label>
+            </div>
+            <div class="select-container" id="select-vacancie-dropdown">
+              <select class="select-dropdown" name="nivelEstudios" required>
+                <option value="" disabled selected></option>
+                <option value="Estudiante">Estudiante</option>
+                <option value="Licenciatura">Licenciatura</option>
+                <option value="Postgrado">Postgrado</option>
+              </select>
+              <label class="select-label gotham-medium">Nivel de estudios</label>
+            </div>
+            <div class="input-group">
+              <input class="form-control" type="email" name="correoElectronico" id="email" required>
+              <label class="gotham-medium" for="correoElectronico">Correo electrónico</label>
+            </div>
+          </div>
+        </div>
+        <input class="btn orange gotham-book" type="submit" value="Enviar" id="js-enviarVacante">
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}

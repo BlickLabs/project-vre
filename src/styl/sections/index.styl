@@ -1,12 +1,93 @@
+.home-cover
+  .hbspt-form
+    width 100%
+
+    form
+      display flex
+      align-items center
+
+      @media screen and (max-width 480px)
+        .hs_submit
+          margin-left: auto;
+          margin-right: auto;
+
+    fieldset.form-columns-2
+      max-width unset
+      width 100%
+
+      .input
+        margin-right 37px !important
+
+      @media screen and (max-width 480px)
+        .input
+          margin-left 0
+          margin-right 0px !important
+
+          input
+            width: 100%;
+
+
+    .hs-form-required,
+    .hs_error_rollup label
+      display none
+
+    .hs-button
+      border 0
+      background #e9852f
+      color #ffffff
+      cursor: pointer;
+      font-family "GothamBook"
+      font-size: 11px;
+      text-transform uppercase
+      letter-spacing: 2.5px;
+      height: 32px;
+      min-width: 101px;
+      text-align: center;
+      text-indent: 2.5px;
+      padding-top: 11px;
+      -webkit-padding-before: 4px;
+      position: relative;
+      width: 101px;
+      z-index: 1;
+
+
+    .hs-input
+      color #ffffff
+      font-family "Gotham"
+      font-size 10px
+      letter-spacing 1.1px
+      height: 35px;
+      font-weight: 500;
+      -webkit-font-smoothing: antialiased;
+
+      &::placeholder
+        color #ffffff
+
+    .hs-error-msgs,
+      list-style none
+      padding-left 0
+      label
+        font-family "Gotham"
+        color #ffffff
+        font-size 11px
+
+    @media screen and (max-width 620px)
+      form
+        flex-direction column
+        align-items flex-start
+
+      fieldset.form-columns-2 > div
+        margin-bottom 20px;
+
 .home
   &-cover
     background-image url("/img/backgrounds/home-cover.jpg")
-    background-position center
+    background-position bottom left
     background-repeat no-repeat
     background-size cover
     display flex
     flex-direction column
-    height 611px
+    height 85vh
     justify-content space-between
     padding 140px 0 45px 0
 
@@ -16,13 +97,13 @@
       letter-spacing 3.4px
       line-height 33px
       margin 0 auto
-      max-width 530px
+      max-width 600px
       text-align center
       text-transform uppercase
 
       &-span
         display block
-        font-size $fs34
+        font-size $fs35
         letter-spacing 5px
         line-height 39px
         margin-top 10px
@@ -54,15 +135,25 @@
       display flex
       flex-direction row
       margin 0 0 0 52px
+      width 100%
+
+      .submitted-message p
+        color #fff
+        font-family "Gotham"
+        text-align center
+        font-size 12px
 
       & > .input-group
         margin-right 37px
+        width 100%
 
       &-container
         align-items flex-end
         display flex
         flex-direction row
         justify-content center
+        margin 0 auto
+        width 844px
 
       &-title
         color $whiteT1
@@ -72,6 +163,10 @@
         line-height 14px
         width 130px
         text-transform uppercase
+
+      &
+        button
+          margin-left 31px
 
   &-apartments
     background-image url("/img/backgrounds/home-apartments-bg.png")
@@ -97,16 +192,34 @@
 
     &-carousel
       bottom 0
-      box-shadow 0 13px 31px 0 rgba(0, 0, 0, 0.5)
-      height 466px
+      height 525px
       left 0
       margin auto
       position absolute
       right 0
       top 0
-      width 844px
+
+      & .owl-stage-outer
+        padding 15px 0 38px 0
+
+      & .owl-stage
+        margin-left 72px
+
+      & .owl-item
+        transform scale(0.83)
+        transition 0.9s
+
+      & .owl-item.center
+        box-shadow 0 13px 31px 0 rgba(0, 0, 0, 0.5)
+        margin 0 -72px
+        transform scale(1)
+        transition 0.9s
+        z-index 1
 
       &-navigation
+        background-position center
+        background-repeat no-repeat
+        background-size cover
         height 30px
         width 16.5px
 
@@ -119,18 +232,18 @@
         top 0
 
       & .owl-prev
-        left -90px
+        left 60px
 
       & .owl-next
-        right -90px
+        right 60px
 
       & .owl-dots
-        bottom -45px
+        bottom -15px
         left 0
         position absolute
         margin 0 auto
         right 0
-        width 144px
+        width 168px
 
       & .owl-dot
         background-color $grayT2 !important
@@ -143,11 +256,10 @@
         background-color $orangeT1 !important
 
       &-container
-        background-image url("/img/backgrounds/home-carousel-bg.png")
         background-position bottom -68px center
         background-repeat no-repeat
         background-size cover
-        height 388px
+        height 438px
         position relative
 
       &-img
@@ -180,12 +292,12 @@
 
     &-street
       color $whiteT1
-      font-size $fs18
+      font-size $fs20
       letter-spacing 0.6px
 
     &-suburb
       color $orangeT1
-      font-size $fs12
+      font-size $fs15
       letter-spacing 2.1px
       text-transform uppercase
 
@@ -206,41 +318,48 @@
 
   &-panel
     padding-left 60px
-    width 311px
+    width 460px
+
+    &-content
+      display flex
+      flex-direction column
 
     &-title
       &-1
         color $orangeT1
-        font-size $fs7
+        font-size $fs9
         letter-spacing 1.6px
         line-height 31px
         text-transform uppercase
 
       &-2
         color $blackT2
-        font-size $fs15
+        font-size $fs16
         letter-spacing 2.7px
         line-height 19px
         margin 14px 0
-        max-width 200px
+        max-width 320px
         text-transform uppercase
 
     &-desc
       color $blackT1
-      font-size $fs11
+      font-size $fs13
       letter-spacing 0.7px
       line-height 15px
       margin-bottom 21px
-      max-width 160px
+      max-width 80%
       opacity 0.5
 
     &-img
       box-shadow 0 13px 31px 0 rgba(0, 0, 0, 0.5)
-      height 141px
+      height 176px
       margin-bottom 22px
       position relative
-      width 343px
+      width 450.5px
       z-index 1
+
+      &-mobile
+        display none
 
   &-showroom
     align-items center
@@ -255,21 +374,26 @@
     width 100%
 
     &-content
-      max-width 345px
+      max-width 370px
 
     &-title
       color $whiteT1
-      font-size $fs24
+      font-size $fs26
       letter-spacing 3.5px
       line-height 33px
       margin-bottom 40px
       text-transform uppercase
 
   &-blog
+    margin-bottom -3px
     position relative
+
+    &-carousel
+      z-index -1
 
     &-img
       width 100%
+      max-height 900px
 
     &-content
       left 20%
@@ -277,43 +401,79 @@
       top 100px
 
     &-title
-      color $blackT3
-      font-size $fs28
+      color #fff
+      font-size $fs30
       letter-spacing 4.1px
       line-height 33px
-      margin-bottom 30px
-      max-width 460px
+      margin-bottom 20px
+      max-width 350px
       text-transform uppercase
+
+.title-cover-br
+  display none
+
+#button-transparent
+  background-color transparent
+
+.arrow
+  &-left
+    background-image url("/img/icons/icon-nav-left-white.png")
+
+  &-right
+    background-image url("/img/icons/icon-nav-right-white.png")
+
+@media screen and (min-width 1270px)
+  .home
+    &-panel
+      width 1084px
 
 @media screen and (max-width 1080px)
   .home
     &-apartments
       &-carousel
         & .owl-prev
-          left -40px
+          left 28px
 
         & .owl-next
-          right -40px
+          right 28px
 
 @media screen and (max-width 970px)
   .home
     &-cover
       &-form
+        flex-wrap wrap
+        justify-content space-between
         margin 20px 0 0 0
+        width 550px
 
         &-container
           align-items flex-start
           flex-direction column
           margin 0 auto
-          width 575px
+          width 550px
+
+        &-title
+          width auto
+
+        & .input-group
+          width auto
+
+        & .input-group:nth-child(2)
+          margin-right 0
+
+        & .input-group .form-control
+          font-size $fs12
+          width 240px
+
+        & button
+          margin 20px 0 0 0
 
     &-apartments
       &-carousel
         background-color transparent
         box-shadow none
-        height 100%
+        height 355px
         position relative
-        width 100%
 
         & .owl-dots
           bottom -20px
@@ -338,14 +498,13 @@
 
         &-img
           box-shadow 0 13px 31px 0 rgba(0, 0, 0, 0.5)
-          height 100%
-          width 100% !important
+          height 303px
+          width 550px !important
 
           &-container
             display flex
-            height auto
+            height 303px
             justify-content center
-            margin 0 20px 32px 20px
 
     &-info
       flex-direction column
@@ -363,41 +522,88 @@
     &-showroom
       padding 40px 0
 
+  .arrow
+    &-left
+      background-image url("/img/icons/icon-nav-left.png")
+      width 20px
+      height 20px
+
+    &-right
+      background-image url("/img/icons/icon-nav-right.png")
+      width 20px
+      height 20px
+
 @media screen and (max-width 620px)
+  .home-blog-carousel-controls
+    display none
+
   .home
     &-cover
+      height 555px
       padding 100px 0 40px 0
 
       &-title
         font-size $fs11
         line-height 20px
+        max-width 295px
 
         &-span
-          font-size $fs16
+          font-size 16px
           line-height 26px
+          margin-top 18px
 
       &-scroll
         &-container
           margin-top 40px
 
+        &-text
+          display none
+
       &-form
         align-items flex-start
         flex-direction column
+        width 100%
 
         &-container
-          width auto
+          align-items center
+          padding 0 50px
+          width 100%
 
         &-title
+          font-size 13px
           margin-bottom 15px
+          width auto
+
+        & .input-group .form-control
+          font-size $fs12
+          width 100%
 
         & .input-group
           margin-bottom 30px
+          margin-right 0
+          width 100%
+
+        & button
+          margin 0
 
     &-apartments
+      &-intro
+        padding-bottom 45px
+
       &-title
         font-size $fs12
         padding 0 30px
-        width auto
+        width 310px
+
+      &-carousel
+        height 206px
+
+        &-img
+          height 165px
+          width 300px !important
+
+          &-container
+            height 165px
 
       &-status
         right 20px
@@ -406,32 +612,66 @@
       &-place
         bottom 10px
 
+      &-suburb
+        font-size $fs18
+
+      &-suburb
+        font-size $fs12
+
+    &-info
+      position relative
+
     &-panel
+      padding 40px 0 60px 0
       width 285px
 
       &-title
         &-2
           font-size $fs13
+          max-width 210px
+
+      &-desc
+        font-size $fs10
+        max-width 275px
 
       &-img
+        display none
         height 111.3px
         width 285px
 
+        &-mobile
+          bottom 162px
+          box-shadow 0 13px 31px 0 rgba(0,0,0,0.5)
+          display block
+          position absolute
+          right 0
+          width 180px
+          z-index 1
+
     &-showroom
+      padding 50px 0 25px 0
+
       &-content
-        max-width 273px
+        max-width 285px
 
       &-title
         font-size $fs16
         line-height 23px
+        margin-bottom 15px
 
     &-blog
       &-content
         left 0
-        margin 30px
+        margin 30px auto 0 auto
+        right 0
         top 0
+        width 285px
 
       &-title
         font-size $fs16
         line-height 23px
         margin-bottom 20px
+        max-width 225px
+
+  .title-cover-br
+    display block
