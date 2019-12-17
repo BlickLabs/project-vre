@@ -393,7 +393,7 @@ var insertMap = (function() {
         markers.push(marker);
       } else {
         locations.forEach(function(item) {
-          if (item.title == "Carolina 149" || item.title == "Coyoacán 1424" || item.title == "Comercio 44" || item.title == "Concepción Beistegui 512") {
+          if (item.title == "Coyoacán 1424" || item.title == "Comercio 44" || item.title == "Concepción Beistegui 512" || item.title == "Colima 49") {
             var item_marker = new google.maps.Marker({
               position: new google.maps.LatLng(
                 item.coordinates[0],
@@ -411,7 +411,8 @@ var insertMap = (function() {
                 item.coordinates[1]
               ),
               map: map,
-              title: item.title
+              title: item.title,
+              icon: '/img/icons/gray-marker.png'
             });
             markers.push(item_marker);
           }
